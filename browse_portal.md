@@ -70,7 +70,7 @@ Figure 5 illustrates how to add a filter and search for available facets using t
 
 Users can also search for and add additional filters that are file-, sample-, subject- or study-specific. All study-, sample- and subject-level facets that are added will appear under the **Samples** tab in the faceted search panel, while file-specific facets will appear under the **Files** tab. A complete list of all available facets in the portal, along with their descriptions, is provided in a spreadsheet accessible via the **Documentation** option under the **Apps** button in the upper-right corner (*Fig. 17*).
 
-To remove filters, you can either click **Remove Added Filters** to clear all added filters or remove individual filters by clicking the red **X** next to the corresponding filter.
+To remove filters, you can either click **Remove Added Filters** to clear all added filters or remove individual filters by clicking the red **X** next to the corresponding filter. Added filters will persist between sessions until you remove them.
 
 Next to each filter, the alphabet (**AZ**) icon allows you to sort the filter terms in ascending or descending order. This is especially helpful when working with long lists of search terms, such as sample taxonomy for isolate genomes. <br><br>
 
@@ -123,7 +123,7 @@ The **Summary** tab of the Summary  Results panel will update the pie charts acc
 *<p align="center">Fig. 8 : Screenshot of the files tab of the Summary results panel listing the 16Samplicon Abundance matrix files from VMRC_PreSSMat study samples</p>*<br>
 
 
-**B.	Retreive all Lactobacillus iners isolate genome FASTA files from pregnant women in Zambia who delivered pre-term**
+**B.	Retrieve all Lactobacillus iners isolate genome FASTA files from pregnant women in Zambia who delivered pre-term**
 
 1.	Click the **Data** button in the welcome box to access the faceted search page
 2.	In the **Samples** tab of the faceted search box, select:
@@ -208,7 +208,7 @@ The **Cart** icon on the top right of the page will display the number of items 
 
 Individual files can be removed from the cart by clicking on the trash icon to the left of each file, or all files can be removed at once by clicking on *Remove from Cart* button.
 
-Users can download **File Manifest** and **Sample metadata** using the **Download** button. Downloading and analyzing large files can be very resource intensive and hence it is recommended to use the **portal client** for downloading files. In order to download files using the portal client, a **File manifest** is required. The manifest file includes details such as file ID, MD5 checksum, file size, file URL and the associated sample id. For more information on how to use the portal client to download files using the file manifest, please refer to this [Github](https://github.com/IGS/portal_client) page which can be accessed via the **Data Transfer** link under the **Apps** button in the upper-right corner of the portal page (*Fig. 17*). <br><br>
+Users can download **File Manifest** and **Sample Metadata** using the **Download** button. Downloading and analyzing large files can be very resource intensive and hence it is recommended to use the **Portal Client** for downloading files. In order to download files using the portal client, a **File Manifest** is required. The manifest file includes details such as file ID, MD5 checksum, file size, file URL and the associated sample id. For more information on how to use the portal client to download files using the file manifest, please refer to this [Github](https://github.com/IGS/portal_client) page which can be accessed via the **Data Transfer** link under the **Apps** button in the upper-right corner of the portal page (*Fig. 17*). <br><br>
 
 
 ![VMRC Cart Page](images/portal/16.Cart.png)
