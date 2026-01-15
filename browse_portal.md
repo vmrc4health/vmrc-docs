@@ -192,7 +192,7 @@ Clicking "Submit Query" will update the summary results panel in the same way as
 
 Once the data has been refined to the dataset of interest, click on the **Files** tab in the summary results panel, to view all files matching the search criteria. To download files, users can either click on the cart icon to the left of individual files of interest OR add all files resulting from the query to the cart by clicking on *Add all files to cart* button under the **Summary** tab. 
 
-Fig. 14 shows a screenshot in which two files have been added to the cart, with their cart icons highlighted in green. The **Cart** icon in the upper-right corner of the page displays the total number of files added to the cart.<br><br>
+Fig. 14 shows a screenshot in which two files have been added to the cart, with their cart icons highlighted in green. <br><br>
 
 
 ![VMRC Add to cart](images/portal/14.Adding_files_2_cart.png)
@@ -200,7 +200,7 @@ Fig. 14 shows a screenshot in which two files have been added to the cart, with 
 *<p align="center">Fig. 14 : Screenshot showing the addition of selected files to the cart</p>*<br>
 
 
-Clicking on an individual file takes users to a summary page for the selected file (*Fig. 15*). This summary page provides details such as the filename, associated sample and study, file URL in Google Cloud storage bucket, file size, MD5 checksum, modality and data type. Users can add the selected file to the cart directly from this page by clicking on the cart icon. In Fig. 15, the green-colored cart icon indicates that the file is already in the cart. <br><br>
+Clicking on an individual file takes users to a summary page for the selected file (*Fig. 15*). This summary page provides details such as the filename, associated sample and study, file URL in Google Cloud storage bucket, file size, MD5 checksum, modality and data type. Users can add the selected file to the cart directly from this page by clicking on the cart icon. In Fig. 15, the green-colored cart icon indicates that the file is already in the cart. The **Cart** icon in the upper-right corner of the page displays the number of items currently in the cart. <br><br>
 
 
 
@@ -209,11 +209,11 @@ Clicking on an individual file takes users to a summary page for the selected fi
 *<p align="center">Fig. 15: Screenshot of the file summary page.The selected file can be added to the cart directly from this page</p>*<br>
 
 
-The **Cart** icon on the top right of the page will display the number of items currently in the cart. At this point, users can continue to browse for additional files, combine results of multiple queries, or proceed to the cart page to download the selected files. This page also provides additional details, including file format, modality and total file volume of the files in the cart (*Fig. 16*).
+Users can continue to browse for additional files, combine results from multiple queries, or proceed to the cart page to download the selected files. Clicking on the Cart icon opens the cart page, which lists all selected files and provides additional details such as file format, modality and total file volume (*Fig. 16*).
 
-Individual files can be removed from the cart by clicking on the trash icon to the left of each file, or all files can be removed at once by clicking on *Remove from Cart* button.
+Individual files can be removed from the cart by clicking on the trash icon to the left of each file, or all files can be removed at once by clicking the *Remove from Cart* button.
 
-Users can download **File Manifest** and **Sample Metadata** using the **Download** button. Downloading and analyzing large files can be very resource intensive and hence it is recommended to use the **Portal Client** for downloading files. In order to download files using the portal client, a **File Manifest** is required. The manifest file includes details such as file ID, MD5 checksum, file size, file URL and the associated sample id. For more information on how to use the portal client to download files using the file manifest, please refer to this [Github](https://github.com/IGS/portal_client) page which can also be accessed via the **Data Transfer** link under the **Apps** button in the upper-right corner of the portal page (*Fig. 17*). <br><br>
+Users can download the **File Manifest** and **Sample Metadata** using the **Download** button. Downloading and analyzing large files can be very resource intensive and hence it is recommended to use the **Portal Client** for downloading files. In order to download files using the portal client, a **File Manifest** is required, which includes file ID, MD5 checksum, file size, file URL and the associated sample id. Instructions for using the portal client to download files with a file manifest, are available on the [Github](https://github.com/IGS/portal_client) page,  which can also be accessed via the **Data Transfer** link under the **Apps** button in the upper-right corner of the portal page (*Fig. 17*). <br><br>
 
 
 ![VMRC Cart Page](images/portal/16.Cart.png)
