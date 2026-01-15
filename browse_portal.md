@@ -38,13 +38,17 @@ The contact Principal Investigator (PI) for each study is also displayed on this
 
 ## Faceted Data Search Page
 
-The VMRC Data Portal provides a simple faceted search query interface to help identify the data of interest. The faceted search page (Fig. 3), accessible through the **Data** button of the landing page welcome box, is divided into 3 sections: **Faceted search box**, the **Advanced Search box** and the **Summary results panel**.<br><br>
+The VMRC Data Portal provides a simple faceted search query interface to help users identify the data of interest. A complete list of all available facets in the portal, along with their descriptions, is provided in the *keyword descriptions document* linked [here](https://docs.google.com/spreadsheets/d/1ZXOP6BzZY779YF_OWE_mdJFw6SAJY5BVXfcAOeZrD9I/edit?gid=0#gid=0). The faceted search page (*Fig. 3*), accessible through the **Data** button in the landing page welcome box, is divided into 3 sections (*Fig.4*): 
+
+* **Faceted Search box**
+* **Advanced Search box** 
+* **Summary Results Panel**  <br><br>
 
 ![VMRC Faceted Data Search](images/portal/3.Faceted_data_search_page.png)
 
 *<p align="center">Fig. 3: Faceted Search page accessible through the Data button of the landing page</p>*<br>
 
-The faceted search box on the left is a filter panel that allows users to select one or more of the available facets to narrow down the samples of interest (*See #1 in Fig. 4*). Selecting any facet automatically populates the advanced search box with the current query (*See #2 in Fig. 4*). The summary results panel provides dynamic pie charts summarizing data corresponding to the currently selected filters (*See #3 in Fig. 4*).<br><br>
+The *Faceted Search box* on the left is a filter panel that allows users to select one or more of the available facets to narrow down the samples of interest (*See #1 in Fig. 4*). Selecting any facet automatically populates the *Advanced Search box* with the current query (*See #2 in Fig. 4*). The *Summary Results Panel* provides dynamic pie charts summarizing data corresponding to the currently selected filters (*See #3 in Fig. 4*).<br><br>
 
 ![VMRC Faceted search page 2](images/portal/4.Faceted_search_page_grouped.png)
 
@@ -55,10 +59,11 @@ The faceted search box on the left is a filter panel that allows users to select
 
 The faceted search box contains two tabs of pre-configured facets associated with
 * **Samples** (study, modality, stability category, geographic location, host age group, pregnancy status and entity type), or
-* **Files** (data category, data type, file format, data access)
-Adding Filters to the Faceted Search box:
+* **Files** (data category, data type, file format, data access) <br><br>
 
-Additional facets are available by **Add a Filter** in the upper right of the faceted search panel. The resulting pop-up lists all additional searchable facets available, which can be browsed or searched for using the search bar at the top. Clicking on any facet will add it to the top of the filter panel for incorporation into the current filter. <br><br>
+#### Adding Filters to the Faceted Search box:
+
+Additional facets can be added to the Faceted Search box using *Add a Filter* in the upper left of the faceted search panel. The resulting pop-up lists all additional searchable facets available, which can be browsed or searched for using the search bar at the top. Clicking on any facet will add it to the top of the filter panel for incorporation into the current filter. <br><br>
 
 
 ![VMRC Add a filter](images/portal/5.Add_a_filter.png)
@@ -68,7 +73,7 @@ Additional facets are available by **Add a Filter** in the upper right of the fa
 
 Figure 5 illustrates how to add a filter and search for available facets using the search bar that pops up.  Note that **HIV Status** is not listed as a default facet under **Samples** tab in the faceted search panel. However, when you add **HIV Status** as a filter, it appears under **Samples** in the faceted search panel, as you can see in the figure below (*Fig. 6*). 
 
-Users can also search for and add additional filters that are file-, sample-, subject- or study-specific. All study-, sample- and subject-level facets that are added will appear under the **Samples** tab in the faceted search panel, while file-specific facets will appear under the **Files** tab. A complete list of all available facets in the portal, along with their descriptions, is provided in a spreadsheet accessible via the **Documentation** option under the **Apps** button in the upper-right corner (*Fig. 17*).
+Users can search for and add additional filters that are file-, sample-, subject- or study-specific. All study-specific facets can be searched for by typing *study* in the *Add a filter* search box. Similarly,  file-, sample- and subject-specific facets can be searched and added. Detailed descriptions of all available search facets are provided in the [keyword descriptions document](https://docs.google.com/spreadsheets/d/1ZXOP6BzZY779YF_OWE_mdJFw6SAJY5BVXfcAOeZrD9I/edit?gid=0#gid=0). All study-, sample- and subject-level facets that are added will appear under the **Samples** tab in the faceted search panel, while file-specific facets will appear under the **Files** tab. 
 
 To remove filters, you can either click **Remove Added Filters** to clear all added filters or remove individual filters by clicking the red **X** next to the corresponding filter. Added filters will persist between sessions until you remove them.
 
@@ -173,7 +178,7 @@ For example, to retrieve only isolate genome FASTA files from VMRC_ZAPPS study, 
 
 *<p align="center">Fig. 12: Screenshot of the advanced search query showing the auto-complete feature for available file formats</p>*<br>
 
-The auto-complete feature helps in entering an advanced query. It pulls all valid options directly from the database to ensure that the user's search contains a valid property, comparison operator, and value. If auto-complete suggests no results in your query, you know that you have entered nonexistent combinations of property+comparison operator+value. The auto-complete feature is also helpful in that it allows users to browse all current values in the database for that particular property. In Figure 12 the options for file-format pops up as part of this auto-complete feature.
+The auto-complete feature helps in entering an advanced query. It pulls all valid options directly from the database to ensure that the user's search contains a valid property, comparison operator, and value. If auto-complete suggests no results in your query, you know that you have entered nonexistent combinations of property+comparison operator+value. The auto-complete feature is also helpful in that it allows users to browse all current values in the database for that particular property. In Figure 12 the options for *file format* pops up as part of this auto-complete feature.
 
 
 Clicking "Submit Query" will update the summary results panel in the same way as the faceted search.<br><br>
@@ -208,7 +213,7 @@ The **Cart** icon on the top right of the page will display the number of items 
 
 Individual files can be removed from the cart by clicking on the trash icon to the left of each file, or all files can be removed at once by clicking on *Remove from Cart* button.
 
-Users can download **File Manifest** and **Sample Metadata** using the **Download** button. Downloading and analyzing large files can be very resource intensive and hence it is recommended to use the **Portal Client** for downloading files. In order to download files using the portal client, a **File Manifest** is required. The manifest file includes details such as file ID, MD5 checksum, file size, file URL and the associated sample id. For more information on how to use the portal client to download files using the file manifest, please refer to this [Github](https://github.com/IGS/portal_client) page which can be accessed via the **Data Transfer** link under the **Apps** button in the upper-right corner of the portal page (*Fig. 17*). <br><br>
+Users can download **File Manifest** and **Sample Metadata** using the **Download** button. Downloading and analyzing large files can be very resource intensive and hence it is recommended to use the **Portal Client** for downloading files. In order to download files using the portal client, a **File Manifest** is required. The manifest file includes details such as file ID, MD5 checksum, file size, file URL and the associated sample id. For more information on how to use the portal client to download files using the file manifest, please refer to this [Github](https://github.com/IGS/portal_client) page which can also be accessed via the **Data Transfer** link under the **Apps** button in the upper-right corner of the portal page (*Fig. 17*). <br><br>
 
 
 ![VMRC Cart Page](images/portal/16.Cart.png)
@@ -222,7 +227,7 @@ On the VMRC Data portal home page, there is an **Apps** button located at the up
 
 * **Data Portal** takes users to the VMRC data portal home page
 * **Website** links to the official VMRC Website
-* **Documentation** takes users to a keywords’ description document which describes each keyword or facet in the portal.
+* **Documentation** links to the VMRC Portal README file
 * The **Data Transfer** links to the IGS portal client GitHub page, which provides guidance on downloading files using the portal client.<br><br>
 
   
