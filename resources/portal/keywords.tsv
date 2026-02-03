@@ -1,0 +1,225 @@
+Keyword	Description
+program_id	Name of the project within which the sequencing was organized
+project_id	Name of the study, in the format of 'project_name'_'study'
+bioproject_accession	The BioProject accession number assigned to your project
+file_name	Name of the file in gzipped format for reads, assemblies etc. 
+file_desc	Description of file (for summary files)
+size	Size of uncompressed summary file and compressed (gzipped) primary files in bytes
+uncompressed_filesize	Size of uncompressed primary file in bytes
+md5	md5sum for compressed (gzipped) primary files
+uncompressed_file_md5	md5sum for uncompressed summary and primary files
+access	Consented access level of data
+data_use_limit_name	Term from the Data Use Ontology (DUO) to describe how the data is allowed to be used
+format	File format type (fastq, fasta, tar, csv etc.)
+data_type	Data type of file
+data_category	Primary files (sequencing/assembly/annotation files) OR Summary files
+modality	Modality/assay information
+samp_taxonomy	Sample taxonomy and NCBI taxonomy id information
+strain	Isolate/strain information for Isolate genomes
+sample_name, sample_id	A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing
+source_sample_id	A unique identifier for the sample, assigned by the lab
+sample_type	Type of sample
+cell_line	Name of specific cell line used in the  study
+cell_type	The CL ontology term and ID for the cell type of the sample
+experimental_factor	Variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner
+lat_lon	Geographical origin of the sample as defined by latitude and longitude
+geo_loc_name	Geographical origin of the sample as defined by the country or sea name followed by specific region name. 
+site	An identifier representing the site of study {AMANHIB = AMANHI Bangladesh, AMANHIP = AMANHI Pakistan, AMANHIT = AMANHI Tanzania, GAPPSB = GAPPS Bangladesh, GAPPSZ = GAPPS Zambia}
+collection_year	Year of sample collection in the format of YYYY
+neg_cont_type	The substance or equipment used as a negative control in an investigation
+pos_cont_type	The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.
+samp_collect_device	The instrument or tool used to obtain a biological or environmental sample from its source. 
+samp_collect_method	The technique or procedure used to obtain a sample from its source
+samp_storage_medium	The substance or condition in which a collected sample is stored before analysis
+samp_storage_method	The method used to preserve and store biological samples after collection to maintain their integrity for downstream analysis. 
+samp_store_temp	Temperature at which sample was stored, e.g. -80 degree Celsius
+samp_store_loc	Location at which sample was stored, usually name of a specific freezer/room
+samp_store_dur	Duration for which the sample was stored
+salinity	The total concentration of all dissolved salts in a liquid or solid sample
+oxy_stat_samp	Oxygenation status of sample
+ref_biomaterial	Primary publication if isolated before genome publication; otherwise, primary genome report.
+source_mat_id	A unique identifier assigned to a material sample used for extracting nucleic acids, and subsequent sequencing
+rel_to_oxygen	Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments
+samp_mat_process	A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed
+size_frac	Filtering pore size used in sample preparation
+samp_size	The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.
+samp_vol_we_dna_ext	Volume (ml) or mass (g) of total collected sample processed for DNA extraction
+nucl_acid_ext	A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample
+nucl_acid_amp	A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids
+lib_size	Total number of clones in the library prepared for the project
+lib_reads_seqd	Total number of clones sequenced from the library
+lib_layout	Library layout information - whether single, paired, or other configuration of reads
+lib_vector	Cloning vector type(s) used in construction of libraries
+lib_screen	Specific enrichment or screening methods applied before and/or after creating libraries
+target_gene	Targeted gene or locus name for marker gene studies
+target_subfragment	Name of subfragment of a gene or locus. 
+pcr_primers	PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment.
+mid	Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run
+adapters	Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments
+pcr_cond	Description of reaction conditions and components of PCR
+assay	The specific method or technology used to generate omics data
+technique	Name and OBI id of the device/instrument used
+tax_ident	The phylogenetic marker(s) used to assign an organism name to the SAG or MAG
+assembly_qual	The assembly quality category
+assembly_name	Name/version of the assembly provided by the submitter that is used in the genome browsers and in the community
+seq_quality_check	If the sequence has been called by automatic systems (none) or undergone a manual editing procedure (e.g. by inspecting the raw data or chromatograms)
+chimera_check	Tool(s) used for chimera checking, including version number and parameters, to discover and remove chimeric sequences
+assembly_software	Tool(s) used for assembly, including version number and parameters
+annot	Tool used for annotation
+number_contig	Total number of contigs in the cleaned/submitted assembly that makes up a given genome, SAG, MAG, or UViG
+feat_pred	Method used to predict UViGs features such as ORFs, integration site, etc.
+ref_db	List of database(s) used for ORF annotation, along with version number and reference to website or publication
+sim_search_meth	Tool used to compare ORFs with database, along with version and cutoffs used
+tax_class	Method used for taxonomic classification, along with reference database used, classification rank, and thresholds used to classify new genomes
+x16s_recover	Can a 16S gene be recovered from the submitted SAG or MAG?
+x16s_recover_software	Tools used for 16S rRNA gene extraction
+trnas	The total number of tRNAs identified from the SAG or MAG
+trna_ext_software	Tools used for tRNA identification
+compl_score	Completeness score, typically based on either the fraction of markers found as compared to a database or the percent of a genome found as compared to a closely related reference genome
+compl_software	Tools used for completion estimate, i.e. checkm, anvi'o, busco
+compl_appr	The approach used to determine the completeness of a given genomic assembly, which would typically make use of a set of conserved marker genes or a closely related reference genome
+contam_score	The contamination score based on the fraction of single-copy genes that are observed more than once in a query genome
+contam_screen_input	The type of sequence data used as input
+contam_screen_param	Specific parameters used in the decontamination sofware, such as reference database, coverage, and kmers
+decontam_software	Tool(s) used in contamination screening
+bin_param	The parameters that have been applied during the extraction of genomes from metagenomic datasets
+bin_software	Tool(s) used for the extraction of genomes from metagenomic datasets, where possible include a product ID (PID) of the tool(s) used.
+reassembly_bin	Has an assembly been performed on a genome bin extracted from a metagenomic assembly?
+mag_cov_software	Tool(s) used to determine the genome coverage if coverage is used as a binning parameter in the extraction of genomes from metagenomic datasets
+organism_count	Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count
+host_symbiont	The taxonomic name of the organism(s) found living in mutualistic, commensalistic, or parasitic symbiosis with the specific host
+community_type	Community type of vaginal microbiome
+community_state_type	Community state type of vaginal microbiome - a snapshot of the community at the time of sampling (i.e. state type)
+subCST	Sub-community state type of vaginal microbiome
+stability_cat	Community stability category based on microbiome composition (Stable/Unstable)
+stability_value	Community stability value based on microbiome composition 
+timepoint_sequential	The order in which samples were collected from the same subject and body site (for longitudinal studies) - in the order of 1,2,3
+timepoint_numeric	The time elapsed from the start of the experiment till the sample collection (for longitudinal studies) . The value is recorded as an integer, with the corresponding unit specified separately in timepoint_numeric_units (e.g., if the timepoint is “20 weeks”, enter timepoint_numeric = 20 and timepoint_numeric_units = weeks).
+timepoint_numeric_units	The unit of measurement associated with timepoint_numeric, in the format of hours, days, weeks, months etc.
+nugent_score	Nugent score in the range of 0-10; The Nugent Score is a Gram stain scoring system for vaginal swabs to diagnose bacterial vaginosis.
+nugent_class	The Nugent class based on Nugent score   0-3 - negative for BV (NO_BV),  4-6 - indeterminate for bacterial vaginosis (INTER_BV) ,  7-10 - indicative of BV (BV); indicative of the absence of lactobacilli and a relative predominance of G. vaginalis and Mobiluncus spp
+associated_resource	A related resource that is referenced, cited, or otherwise associated with the sequence.
+sop	Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences
+date_lmp	Date of LMP (Last Menstrual Period) in the format of YYYY-MM-DD
+date_usg	Date on which the USG-based dating of pregnancy was done, in the format of YYYY-MM-DD
+vdt_enr	Date of enrollment, in the format of YYYY-MM-DD
+pregnancy	Date due of pregnancy,calculated at the time of enrollment in the format of YYYY-MM-DD
+taxonomies	Name and NCBI taxon ID of the host from which the sample was obtained
+source_subject_id	A unique identifier for the subject, assigned by the lab
+sbj_id	A unique identifier by which each subject can be referred to, de-identified
+pregnancy_status	Pregnancy status of the host -  pregnant or not pregnant
+pregnancy_id	A numerical identifier representing the sequence number of a current pregnancy. This identifier starts at 1 for the first pregnancy and increments by 1 for each subsequent pregnancy.
+host_age	Age of host,in years, at the time of sampling
+host_age_group	Host age categorized into bins of 10 years
+host_sex	Gender or physical sex of the host.
+anatomies	UBERON term and ID of the body site from where the sample was obtained
+host_body_product	UBERON term and ID of the substance produced by the body
+host_genotype	Observed genotype
+host_phenotype	Phenotype of human or other host. 
+sexual_act	Current sexual partner and frequency of sex
+douche	Date of most recent douche in the format of YYYY-MM-DD
+birth_control	Specification of birth control medication used
+menopause	Date of onset of menopause in the format of YYYY-MM-DD
+hrt	Whether subject had hormone replacement therapy, and if yes, start date in the format of YYYY-MM-DD
+hysterectomy	Specification of whether hysterectomy was performed
+vaginal_pH	The pH level of vagina
+host_tot_mass	Total mass of the host at collection, the unit depends on host
+host_height	The height of subject
+host_body_mass_index	Body mass index, calculated as weight/(height)squared
+host_pulse	Resting pulse, measured as beats per minute
+sbp	Systolic blood pressure of the participant at current antenatal visit 
+dbp	Diastolic blood pressure of the participant at current antenatal visit 
+hemo	Measurement of hemoglobin concentration
+hba1c	Hemoglobin A1c measurement
+crp	C-reactive protein measurement
+agp	alpha-1-acid glycoprotein measurement
+ca	plasma total calcium concentration measurement
+fer	blood ferritin measurement
+bun	serum urea nitrogen measurement
+scr	serum creatinine measurement
+ast	serum glutamic-oxaloacetic transaminase measurement
+alb	serum albumin measurement
+tsh	Thyroid-Stimulating Hormone measurement
+rpr	rapid plasma reagin measurement
+sflt	soluble fms-like tyrosine kinase-1 measurement
+plgf	placental growth factor
+pappa	pregnancy-associated plasma protein-A measurement
+vegf	vascular endothelial growth factor
+HIV_status	Result of HIV serological test
+malaria	Result of malaria test conducted by RDT or smear
+chron_htn	If the participant has a history of hypertension outside of pregnancy
+htn_visit	If the participant had hypertension during the entire pregnancy
+diabetes	If the participant has a history of diabetes outside of pregnancy
+tb	If the participant has a history of tuberculosis
+thyroid	If the participant has a history of hyper- or hypo-thyroidism
+epilepsy	If the participant has a history of eplilepsy
+host_body_temp	Core body temperature of the host when sample was collected
+medic_hist_perform	Whether full medical history was collected
+sniff_toba	If the participant has ever sniffed or chewed tobacco
+sniff_freq	If the participant has ever sniffed or chewed tobacco, the frequency per week
+smoke_hist	Smoking history of the participant
+passive_smok	If the participant has lived or currently lives with people who smoke in an enclosed area/room in their presence
+alcohol_freq	If the participant drinks alcohol, the average number of units consumed per week (1 unit = small glass (125 ml) of wine or one bottle/can (330 ml) of beer)
+vag_bleed	If any vaginal bleeding reported by the participant since last visit
+swell_ankle	If any swelling in the ankle of the participant
+syphilis	Result of Syphilis testing at enrollment
+udip_prot	Semi quantitative urine test strip analysis
+gravidity	Total number of times the participant has been pregnant, including the current pregnancy
+parity	Number of pregnancies the participant has carried to at least 24 weeks
+prev_mis	Number of previous pregnancies the participant has had that ended before 6 months
+prev_sb	If the participant has ever had stillbirth at a previous delivery
+prev_sb_no	Number of previous deliveries the participant has had of a stillborn child 
+prev_lb	Number of deliveries the participant has had of a live child
+prev_ptb	If the participant has ever had a baby that was born preterm (<37 weeks GA)
+prev_ptb_no	Number of previous pregnancies the pariticipant has had that ended before term  (<37 weeks GA)
+prev_ptb_multi	Number of previous pre-term births  (<37 weeks GA) in which the participant had more than 1 baby
+prev_multip	If the participant delivered twins or triplets in any of her previous pregnancies
+prev_cs	If the participant had a caesarean section in any of the previous pregnancies
+alive_child	Number of living children the participant has
+birth_interval	Interval between the participant's previous pregnancy outcome and the last menstrual period for the current pregnancy
+race	A category of people who identify with each other, usually on the basis of presumed similarities such as a common language, ancestry, history, society, culture, nation or social treatment within their residing area
+host_occupation	Occupation of the participant - if employed or not
+host_education	Total number of years of completed schooling/education of the participant
+hus_education	Total number of years of completed schooling /education of the participant's husband
+fmly_memb	Number of family members who share the same kitchen, usually sleeping under the same roof or spending from the same purse
+typ_house	Type of house the participant resides in :  Pucca: Floor= Finished/cement; Roof= slate/tile/asbestos; Walls= cement/finished;   Kutcha: Floor= Mud/clay/rudimentary; Roof= Thatch/mud Walls= Mud/rudimentary
+rooms_house	Number of rooms in the participant's home that are used for sleeping
+hh_electricity	If the participant's household has electricity supply
+fuel_for_cook	Type of fuel primarily used for cooking in the participant's household
+drinking_source	Main source of drinking water for members of the participant's household
+toilet	Type of toilet facilities typically used by members of the participant's household
+wealth_index	Wealth Index (quintiles) calculated from assets data using PCA
+gestational_age_intg	Gestational age assessed using INTERGROWTH-21st formula.
+gestational_age_hdlk	Gestational age assessed using Hadlock formula.
+gestational_age_lmp	Gestational age calculated from the date of last normal menstrual period 
+spont_labour	If labour initiated on its own (spontaneous) or was it initiated by a provider
+labour_aug	If  labour was augmented with oxytocin
+labour_fever	If the participant had a fever in labour
+labour_htn	If the participant had a diagnosis of hypertension during labour
+fundal_height	Symphysis-fundal height at AN visits
+crl	Crown- rump length of fetus (if gestation is < 14 weeks)
+hc	Head circumference of fetus (if gestation is >=14 weeks)
+ac	Abdominal circumference of fetus (if gestation is >=14 weeks)
+bpd	Bi-parietal diameter of fetus (if gestation is >=14 weeks)
+fl	Femur length of fetus  (if gestation is >=14 weeks)
+num_fetus	Number of fetuses as identified in the scan
+fetal_anomalies	If any fetal anomalies were detected during pregnancy
+erly_ptb	If participant had early preterm birth (baby born between 24 and 34 weeks)
+sPTB/preterm	Delivery status if participant had preterm birth
+GAGE_BRTH	Harmonized value for gestational age at birth 
+gestational_age	Gestational age at delivery, presented in ‘week.day’ format. For instance, 12.0 would indicate the 12th week and 0 days, while 11.6 would signify 11 weeks and 6 days (where 0 represents the first day of the week).
+del_date	Date of delivery
+del_mode	Mode of delivery
+del_time	Time of delivery
+delivery_place	Place of delivery
+delivery_condby	If delivery was conducted by a trained or untrained birth attendant
+labour_24	If more than 24 hours transpired between onset of labour pains and delivery
+rom_24	If more than 24 hours transpired between membrane rupture and delivery
+liquor_clear	If liquor was clear
+single_twin	Number of babies in this pregnancy at the time of delivery
+birth_outcome	Outcome of delivery
+mat_death	If the participant died during pregnancy or within 42 days of delivery
+mat_death_date	Date of death of the participant
+pph	If the participant had postpartum hemorrhage
+contact_PI	Name of study PI to contact for questions related to study/dataset
+contributors	Names of individuals contributing to the processes of sample collection,sequence generation, analysis, and data submission
