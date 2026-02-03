@@ -38,7 +38,7 @@ The contact Principal Investigator (PI) for each study is also displayed on this
 
 ## Faceted Data Search Page
 
-The VMRC Data Portal provides a simple faceted search query interface to help users identify the data of interest. A complete list of all available facets in the portal, along with their descriptions, is provided in the *keyword descriptions document* linked [here](https://docs.google.com/spreadsheets/d/1ZXOP6BzZY779YF_OWE_mdJFw6SAJY5BVXfcAOeZrD9I/edit?gid=0#gid=0). The faceted search page (*Fig. 3*), accessible through the **Data** button in the landing page welcome box, is divided into 3 sections (*Fig.4*): 
+The VMRC Data Portal provides a simple faceted search query interface to help users identify the data of interest. A complete list of all available facets in the portal, along with their descriptions, is provided in the *keyword descriptions document* linked [here](resources/portal/keywords.tsv). The faceted search page (*Fig. 3*), accessible through the **Data** button in the landing page welcome box, is divided into 3 sections (*Fig.4*): 
 
 * **Faceted Search box**
 * **Advanced Search box** 
@@ -73,7 +73,7 @@ Additional facets can be added to the Faceted Search box using *Add a Filter* in
 
 Figure 5 illustrates how to add a filter and search for available facets using the search bar that pops up.  Note that **HIV Status** is not listed as a default facet under **Samples** tab in the faceted search panel. However, when you add **HIV Status** as a filter, it appears under **Samples** in the faceted search panel, as you can see in the figure below (*Fig. 6*). 
 
-Users can search for and add additional filters that are file-, sample-, subject- or study-specific. All study-specific facets can be searched for by typing *study* in the *Add a filter* search box. Similarly,  file-, sample- and subject-specific facets can be searched and added. Detailed descriptions of all available search facets are provided in the [keyword descriptions document](https://docs.google.com/spreadsheets/d/1ZXOP6BzZY779YF_OWE_mdJFw6SAJY5BVXfcAOeZrD9I/edit?gid=0#gid=0). All study-, sample- and subject-level facets that are added will appear under the **Samples** tab in the faceted search panel, while file-specific facets will appear under the **Files** tab. 
+Users can search for and add additional filters that are file-, sample-, subject- or study-specific. All study-specific facets can be searched for by typing *study* in the *Add a filter* search box. Similarly,  file-, sample- and subject-specific facets can be searched and added. Detailed descriptions of all available search facets are provided in the [keyword descriptions document](resources/portal/keywords.tsv). All study-, sample- and subject-level facets that are added will appear under the **Samples** tab in the faceted search panel, while file-specific facets will appear under the **Files** tab. 
 
 To remove filters, you can either click **Remove Added Filters** to clear all added filters or remove individual filters by clicking the red **X** next to the corresponding filter. Added filters will persist between sessions until you remove them.
 
