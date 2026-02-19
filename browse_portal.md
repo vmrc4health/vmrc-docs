@@ -155,7 +155,7 @@ The **Summary** tab of the Summary  Results panel will update the pie charts acc
 
 ### Advanced Search Box
 
-The Advanced Search feature simulates querying a database directly. To begin an advanced search, click the "Advanced" button in the upper right corner of the advanced search box. <br><br>
+The Advanced Search feature simulates querying a database directly. To begin an advanced search, click the "Advanced Search" button in the upper right corner of the advanced search box. <br><br>
 
 ![VMRC Adv Search Box](images/portal/11.Adv_search_box.png)
 
