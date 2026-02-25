@@ -1,6 +1,6 @@
 # Portal Client Prerequisites
 
-This guide will get your environment ready to use the [portal client](https://github.com/IGS/portal_client) for downloading data from the [VMRC Portal](https://portal.vmrc4health.org/). Once you've completed these steps, you'll be ready to follow the [portal client usage instructions](LINK_TO_CLIENT_DOCS).
+This guide will get your environment ready to use the [portal client](https://github.com/IGS/portal_client) for downloading data from the [VMRC Portal](https://portal.vmrc4health.org/). Once you've completed these steps, you'll be ready to follow the [portal client usage instructions](portal_client_usage.md).
 
 ---
 
@@ -164,6 +164,6 @@ This will provide a URL to open in your Windows browser to complete authenticati
 
 ## You're Ready
 
-Once you've completed the steps above, proceed to the [portal client usage instructions](LINK_TO_CLIENT_DOCS) to begin downloading your data.
+Once you've completed the steps above, proceed to the [portal client usage instructions](portal_client_usage.md) to begin downloading your data.
 
 If you run into issues with any of these setup steps, please [open an issue](https://github.com/vmrc4health/vmrc-docs/issues) on this repository.
