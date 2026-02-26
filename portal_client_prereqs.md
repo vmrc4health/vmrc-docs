@@ -1,6 +1,11 @@
 # Portal Client Prerequisites
 
-This guide will get your environment ready to use the [portal client](https://github.com/IGS/portal_client) for downloading data from the [VMRC Portal](https://portal.vmrc4health.org/). Once you've completed these steps, you'll be ready to follow the [portal client usage instructions](portal_client_usage.md).
+This guide will get your environment ready to use the [portal client](https://github.com/IGS/portal_client) for downloading data from the [VMRC Portal](https://portal.vmrc4health.org/).
+
+> [!IMPORTANT]
+> In order to follow these instructions, you will need an institutional Google account that has been granted access to the VMRC Google Cloud project. If you have not yet created this type of account, please follow the following [instructions](institutional_google_account_creation.md).
+
+Once you've completed these steps, you'll be ready to follow the [portal client usage instructions](portal_client_usage.md).
 
 ---
 
