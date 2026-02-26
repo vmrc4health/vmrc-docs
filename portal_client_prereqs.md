@@ -46,7 +46,13 @@ Follow the [official macOS installation instructions](https://cloud.google.com/s
 gcloud init
 ```
 
-This will open a browser window to authenticate your Google account.
+This will provide a URL to open in your browser to complete authentication.
+
+Once authenticated and back in the terminal, when prompted, provide the following cloud project id:
+
+```bash
+vmrc-462716
+```
 
 ---
 
@@ -81,6 +87,14 @@ Follow the [official Linux installation instructions](https://cloud.google.com/s
 
 ```bash
 gcloud init
+```
+
+This will provide a URL to open in your browser to complete authentication.
+
+Once authenticated and back in the terminal, when prompted, provide the following cloud project id:
+
+```bash
+vmrc-462716
 ```
 
 ---
@@ -158,7 +172,13 @@ Follow the prompts, then restart your WSL terminal to ensure `gcloud` is on your
 gcloud init
 ```
 
-This will provide a URL to open in your Windows browser to complete authentication.
+This will provide a URL to open in your browser to complete authentication.
+
+Once authenticated and back in the terminal, when prompted, provide the following cloud project id:
+
+```bash
+vmrc-462716
+```
 
 ---
 
