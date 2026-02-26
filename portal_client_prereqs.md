@@ -34,7 +34,7 @@ In your terminal, run:
 python3 --version
 ```
 
-You should see `Python 3.11.x` or higher. If you see a lower version or a `command not found` error, visit [python.org/downloads](https://www.python.org/downloads/) to install a current version.
+You should see `Python 3.11.x` or higher. If you see a lower version or a `command not found` error, visit [python.org/downloads](https://www.python.org/downloads/) to install a current version (you may need to restart your terminal once the installation is complete to ensure `python` is on your PATH).
 
 You can verify that `pip` and `venv` are available by running:
 
