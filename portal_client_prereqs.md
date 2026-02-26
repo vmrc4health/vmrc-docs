@@ -45,7 +45,7 @@ python3 -m venv --help
 
 ### 3. Install Google Cloud CLI
 
-Follow the [official macOS installation instructions](https://cloud.google.com/sdk/docs/install#mac) for the Google Cloud CLI. Once installed, initialize and log in by running:
+Follow the [official macOS installation instructions](https://cloud.google.com/sdk/docs/install#mac) for the Google Cloud CLI (the specific package you should download will depend on both your operating system and your CPU). Once installed, initialize and log in by running:
 
 ```bash
 gcloud init
@@ -88,7 +88,7 @@ python3 -m venv --help
 
 ### 3. Install Google Cloud CLI
 
-Follow the [official Linux installation instructions](https://cloud.google.com/sdk/docs/install#linux) for the Google Cloud CLI. Once installed, initialize and log in:
+Follow the [official Linux installation instructions](https://cloud.google.com/sdk/docs/install#linux) for the Google Cloud CLI (the specific package you should download will depend on both your operating system and your CPU). Once installed, initialize and log in:
 
 ```bash
 gcloud init
