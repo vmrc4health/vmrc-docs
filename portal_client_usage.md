@@ -35,6 +35,14 @@ which portal-client
 
 ---
 
+## Steps to set VMRC project:
+### 1. Ensure correct project id is selected
+```bash
+gcloud config set project vmrc-462716
+```
+
+---
+
 ## Steps to launch portal client:
 ### 1. For users accessing files from Google buckets:
 ```bash
