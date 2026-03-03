@@ -227,7 +227,7 @@ On the VMRC Data portal home page, there is an **Apps** button located at the up
 
 * **Data Portal** takes users to the VMRC data portal home page
 * **Website** links to the official VMRC Website
-* **Documentation** links to the VMRC Portal README file
+* **Documentation** links to the README file on GitHub for browsing the VMRC portal. The GitHub page also provides additional documentation, including instructions for setting up an institutional Google account, portal client installation prerequisites, and  usage information.
 * The **Data Transfer** links to the IGS portal client GitHub page, which provides guidance on downloading files using the portal client.<br><br>
 
   
