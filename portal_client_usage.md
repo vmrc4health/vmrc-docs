@@ -6,16 +6,16 @@ This guide follows instructions for [portal client pre-requisites](portal_client
 
 ## Steps to access portal client repository:
 ### 1. Get the source code
-Get the source code for portal-client v1.5.2 from https://github.com/IGS/portal_client/archive/refs/tags/v1.5.2.tar.gz
+Get the source code for portal-client v1.5.3 from https://github.com/IGS/portal_client/archive/refs/tags/v1.5.3.tar.gz
 ### 2. Untar the source code
 In your terminal, go to the directory where source code is downloaded and untar the source code
 ```bash
-tar -xf portal_client-1.5.2.tar.gz 
+tar -xf portal_client-1.5.3.tar.gz 
 ```
 ### 3. Create a virtual environment
 You can provide a path to create an environment in the portal client directory
 ```bash
-cd portal_client-1.5.2
+cd portal_client-1.5.3
 python3 -m venv </path/to/env>     #For example, python3 -m venv env1
 ```
 ### 4. Activate the virtual environment
