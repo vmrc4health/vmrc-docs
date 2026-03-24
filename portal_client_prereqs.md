@@ -59,6 +59,13 @@ Once authenticated and back in the terminal, when prompted, provide the followin
 vmrc-462716
 ```
 
+Finally, you should set Application Default Credentials (ADC) for your local development environment.
+You can do so with the following command, which will once again provide a URL to open in your browser:
+
+```bash
+gcloud auth application-default login
+```
+
 ---
 
 ## Linux
@@ -100,6 +107,13 @@ Once authenticated and back in the terminal, when prompted, provide the followin
 
 ```bash
 vmrc-462716
+```
+
+Finally, you should set Application Default Credentials (ADC) for your local development environment.
+You can do so with the following command, which will once again provide a URL to open in your browser:
+
+```bash
+gcloud auth application-default login
 ```
 
 ---
@@ -183,6 +197,13 @@ Once authenticated and back in the terminal, when prompted, provide the followin
 
 ```bash
 vmrc-462716
+```
+
+Finally, you should set Application Default Credentials (ADC) for your local development environment.
+You can do so with the following command, which will once again provide a URL to open in your browser:
+
+```bash
+gcloud auth application-default login
 ```
 
 ---
