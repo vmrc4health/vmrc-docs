@@ -1,0 +1,153 @@
+KEY: Mandatory(M)/Optional(X)/Conditional mandatory(C),,,,
+Attributes,Description,Additional information,Examples,Mandatory/Optional/ Conditional Mandatory
+,,,,
+Study Design,"Provide study design information - whether it is longitudinal study, information on number of samples etc","Observational (Case-Control, Cohort, Cross-sectional survey, etc.) or Experimental (Randomized controlled trial, Non-randomized controlled trial, etc.). For a brief description of common study designs see: DOI: 10.11613/BM.2014.022
+
+If applicable, describe any blinding (e.g. single or double-blinding) used in the course of the study.","Observational Model:Cohort
+Time Perspective:Prospective",M
+Sequencing methods,State the strategy used for metagenomic classification.,,"targeted 16S by qPCR or sequencing, shotgun metagenomics, metatranscriptomics",M
+Specimens,Describe body site(s) studied.,,"vaginal, rectal ",M
+Background and Rationale,"Summarize the underlying background, scientific evidence, or theory driving the current hypothesis as well as the study objectives.",,"More than 1.5 million HIV-infected women become pregnant each year. Approximately half have access to antiretroviral therapy (ART), but all are at increased risk of PTB. Injectable 17-alpha hydroxyprogesterone caproate (17P) is a promising, low-cost intervention to prevent PTB that should be studied in this population.",M
+Hypotheses,"State the pre-specified hypothesis. If the study is exploratory, state any pre-specified study objectives.",,Hormonal fluctuations affect the diversity and composition of the vaginal microbiota,X
+Participants,"State what the population of interest is, and the method by which participants are sampled from that population. Include relevant information on physiological state of the subjects or stage in the life history of disease under study when participants were sampled.","Examples of the population of interest could be: adults with no chronic health conditions, adults with type II diabetes, newborns, etc. This is the total population to whom the study is hoped to be generalizable to. The sampling method describes how potential participants were selected from that population.
+
+If the participants are from a substudy of a larger study, provide a brief description of that study and cite that study.
+
+Clearly state how cases and controls are defined.
+
+An example of relevant physiological state might be pre/post menopausal for a vaginal microbiome study; examples of stage in the life history of disease could be whether specimens were collected during active or dormant disease, or before or after treatment.", Pre-menopausal women aged 30-45 years.,M
+Geographic location,State the geographic region(s) where participants were sampled from.,"MIxS: geographic location (country and/or sea,region)","Multiple clinics in urban areas of the Zambia, Bangladesh and etc",M
+Relevant Dates,State the start and end dates for the study,, Study conducted from November 2022 to November 2025,M
+Eligibility criteria,List any criteria for inclusion and exclusion of recruited participants.,"Among potential recruited participants, how were some chosen and others not? This could include criteria such as sex, diet, age, health status, or BMI.
+
+If there is a primary and validation sample, describe inclusion/exclusion criteria for each.","Inclusion Criteria:
+Pregnant women ≥15 years will be eligible to participate. Additionally, participants will:
+1. Have a completed screening ultrasound with gestational age < 20 weeks
+2. Be HIV-uninfected at enrollment (NB: prior to Protocol Version 4.0 [3 Nov 2017] enrolled both HIV-infected and uninfected women)
+3. Have a singleton or twin pregnancy with fetal heart tones confirmed by ultrasound
+4. Reside within Lusaka with no plans to relocate during the study follow-up period
+5. Be willing to provide written, informed consent
+6. Be willing to allow their infants to participate in the study
+
+
+Exclusion criteria:
+1. Pregnant women > 24 weeks' gestation or with screening ultrasound ≥ 16 weeks
+2. Infants born to women not enrolled in the study""",M
+Antibiotics/Drugs Usage,List what is known about usage of drugs before or during sample collection.,"If participants were excluded due to current or recent antibiotics usage, state this here.
+
+Other factors (e.g. proton pump inhibitors, probiotics, etc.) that may influence the microbiome should also be described as well.","• Vaginal antibiotic: 0.75% metronidazole vaginal gel (Graceway Pharmaceuticals, Bristol, TN, USA)
+• Vaginal probiotic: Ecologic Femi vaginal capsule (Winclove Probiotics, Amsterdam, The Netherlands)
+• Vaginal probiotic: Gynophilus vaginal tablet (Probionov, Clermont- Ferrand, France)",X
+Analytic sample size,"Explain how the final analytic sample size was calculated, including the number of cases and controls if relevant, and reasons for dropout at each stage of the study. This should include the number of individuals in whom microbiome sequencing was attempted and the number in whom microbiome sequencing was successful.","Consider use of a flow diagram (see template at https://stormsmicrobiome.org/figures). Also state sample size in abstract.
+
+If power analysis was used to calculate sample size, describe those calculations.",,X
+Longitudinal Studies,"For longitudinal studies, state how many follow-ups were conducted, describe sample size at follow-up by group or condition, and discuss any loss to follow-up.","If there is loss to follow-up, discuss the likelihood that drop-out is associated with exposures, treatments, or outcomes of interest.",Samples self-collected daily for 10 weeks.,X
+Matching,"For matched studies, give matching criteria.","""""Matched"""" refers to matching between comparable study participants as cases and controls or exposed / unexposed.
+
+Indicate whether participants were individual or frequency matched and in what ratio were they matched (e.g. 1 case to 1 control).",Cases matched to controls on gestational age at enrollment,X
+Ethics,"State the name of the institutional review board that approved the study and protocols, protocol number and date of approval, and procedures for obtaining informed consent from participants.",,Study approved by the Institutional Review Board (IRB),M
+Laboratory methods,State the laboratory/center where laboratory work was done.,Provide a reference to complete lab protocols if previously published elsewhere such as on protocols.io. Note any modifications of lab protocols and the reason for protocol modifications.,"Microbiome analyses conducted at the University of Maryland Institute for Genome Sciences using the protocol described in: https://doi.org/10.1128/msystems.00029-19
+ ",M
+Specimen collection,State the body site(s) sampled from and how specimens were collected.,Use terms from the Uber-anatomy Ontology (https://www.ebi.ac.uk/ols/ontologies/uberon) to describe body sites in a standardized format.,UBERON:0000996,M
+Shipping,Describe how samples were stored and shipped to the laboratory.,Include length of time from collection to receipt by the lab and if temperature control was used during shipping.,shipped on dry ice for preservation,X
+Storage,"Describe how the laboratory stored samples, including time between collection and storage and any preservation buffers or refrigeration used.","State where each procedure or lot of samples was done if not all in the same place.
+
+Include reagent/lot/catalogue #s for storage buffers.",Vaginal samples were frozen at -80oc for long term storage.,X
+DNA extraction,"Provide DNA extraction method, including kit and version if relevant.","If any DNA quantification methods were used prior to DNA amplification or at the pooling step of library preparation, state so here.","Used the QIAamp DNA Mini Kit (Qiagen, Valencia, CA) to extract DNA from self-collected vaginal swabs.",X
+Human DNA sequence depletion or microbial DNA enrichment,Describe whether human DNA sequence depletion or enrichment of microbial or viral DNA was performed.,,Yes/No,M
+Primer selection,Provide primer selection and DNA amplification methods as well as variable region sequenced (if applicable).,,"Primer set: 515F/806R
+
+The PCR amplification conditions:  (384-well thermocycler): 94°C for 3 min; 35 cycles of 94°C for 45 s, 50°C for 60 s, and 72°C for 90s; 72°C for 10 min, and then a 4°C hold. Resulting amplicons were cleaned, pooled, and quantified using the Quant-iT picogreen double-stranded DNA assay kit following EMP benchmarked protocols
+
+Target: V4 region of 16S rRNA gene",X
+Positive Controls,Describe any positive controls (mock communities) if used.,"If used, should be deposited under guidance provided in the 8.X items.",Positive controls included included ZymoBIOMICS community standard and a pooled vaginal swab specimen.,M
+Negative Controls,Describe any negative controls if used.,"If used, should be deposited under guidance provided in the 8.X items.",Blank extractions were performed and sequenced as negative controls.,M
+Contaminant mitigation and identification,"Provide any laboratory or computational methods used to control for or identify microbiome contamination from the environment, reagents, or laboratory.","Includes filtering of reagents and other steps to minimize contamination. It is relevant to state whether the specimens of interest have low microbial load, which makes contamination especially relevant.",Contaminant mitigation and identification: UV-irradiated and filtered reagents and consumables. Blank samples at each step. Quality control and error correction of sequencing data. SourceTracker to identify and quantify contamination sources,X
+Replication,"Describe any biological or technical replicates included in the sequencing, including which steps were replicated between them.","Replication may be biological (redundant biological specimens) or technical (aliquots taken at different stages of analysis) and used in extraction, sequencing, preprocessing, and/or data analysis.", 20 biological replicates per group (healthy and BV). Two technical replicates per sample,X
+Sequencing strategy,"Major divisions of strategy, such as shotgun or amplicon sequencing.","For amplicon sequencing (for example, 16S variable region), state the region selected. State the model of sequencer used.",Amplicon sequencing of V3-V4 region of 16S rRNA gene on Illumina MiSeq,M
+Sequencing methods,"State whether experimental quantification was used (QMP/cell count based, spike-in based) or whether relative abundance methods were applied.","These include read length, sequencing depth per sample (average and minimum), whether reads are paired, and other parameters.","Cell count-based quantification. Illumina MiSeq, V3-V4 16S rRNA, paired-end, 300 bp, 50K (30K min) reads/sample.",M
+Batch effects,"Detail any blocking or randomization used in study design to avoid confounding of batches with exposures or outcomes. Discuss any likely sources of batch effects, if known.","Sources of batch effects include sample collection, storage, library preparation, and sequencing and are commonly unavoidable in all but the smallest of studies.","Blocked by age, ethnicity, cycle phase. Sources: sample, storage, DNA, library, sequencing. Minimized by standard protocols and quality control",X
+Metatranscriptomics,Detail whether any mRNA enrichment was performed and whether/how retrotranscription was performed prior to sequencing. Provide size range of isolated transcripts. Describe whether the sequencing library was stranded or not. Provide details on sequencing methods and platforms.,Provide details on any internal standards which may have been used as well as parameters and versions of any software or databases used.,"mRNA enriched, retrotranscribed, 200-600 bp, stranded, Illumina HiSeq 2500, 2x100 bp. No standards. Software: Trimmomatic, edgeR. Databases: NCBI RefSeq, KEGG,",C
+Metaproteomics,"Detail which protease was used for digestion. Provide details on proteomic methods and platforms (e.g. LC-MS/MS, instrument type, column type, mass range, resolution, scan speed, maximum injection time, isolation window, normalised collision energy, and resolution).",Provide details on any internal standards which may have been used as well as parameters and versions of any software or databases used.," Trypsin digestion. LC-MS/MS, Orbitrap Fusion, C18 column, 400-1600 m/z, 120,000 resolution, 3 Hz scan speed, 50 ms max injection time, 1.6 m/z isolation window, 35% NCE, 15,000 resolution. No internal standards.Software: MaxQuant v1.6.17, Perseus v1.6.14. Databases: UniProtKB, MetaCyc",C
+Metabolomics,"Specify the analytic method used (such as nuclear magnetic resonance spectroscopy or mass spectrometry). For mass spectrometry, detail which fractions were obtained (polar and/or non polar) and how these were analyzed. Provide details on metabolomics methods and platforms (e.g. derivatization, instrument type, injection type, column type and instrument settings).",Provide details on any internal standards which may have been used as well as parameters and versions of any software or databases used.,"Mass spectrometry, polar and non-polar fractions, derivatization with methoximation and silylation, GC-MS, splitless injection, DB-5MS column, 70 eV EI mode. Internal standard: ribitol. Software: AMDIS, R, MetaboAnalyst. Database: NIST, KEGG, HMDB",C
+Data sources/ measurement,"For each non-microbiome variable, including the health condition, intervention, or other variable of interest, state how it was defined, how it was measured or collected, and any transformations applied to the variable prior to analysis.","State any sources of potential bias in measurements, for example multiple interviewers or measurement instruments, and whether these potential biases were assessed or accounted for in study design.
+
+Use terms from a standardized ontology such as the Experimental Factor Ontology (https://www.ebi.ac.uk/efo/) to describe variables of interest in a standardized format.","measurement: BMI = weight/height^2, scale and stadiometer. BP = blood force, sphygmomanometer. Diet = food and drinks, recall questionnaire, food database. Biases: intake, measurement, and recall variability, repeated, standardized, and validated methods",X
+Research design for causal inference,"Subgroup analysis by age, sex, and ethnicity. Interaction tests by Cox proportional hazards models. Kaplan-Meier curves and hazard ratios for results","For causal inference, this item refers to describing the assumptions that would be required to draw causal inferences from observational data. See Vujkovic-Cvijin, I., Sklar, J., Jiang, L. et al. Host variables confound gut microbiota studies of human disease. Nature 587, 448–454 (2020). https://doi.org/10.1038/s41586-020-2881-9 for more details on confounding in observational microbiome studies.
+
+For example, hypothesized confounders may be controlled for by multivariable adjustment. Consider using a directed acyclic graph (DAG) to describe your causal model and justify any variables controlled for. DAGs can be made using www.dagitty.net.","Confounders: age, sex, BMI, etc. Controlled by regression. Rationale: reduce bias, estimate microbiota-IBD association",X
+Selection bias,Discuss potential for selection or survival bias.,"Selection bias can occur when some members of the target study population are more likely to be included in the study/final analytic sample than others. Some examples include survival bias (where part of the target study population is more likely to die before they can be studied), convenience sampling (where members of the target study population are not selected at random), and loss to follow-up (when probability of dropping out is related to one of the things being studied).",Selection bias: Potential for convenience sampling due to recruitment from a single gynecology clinic. Potential for loss to follow-up due to patients' non-compliance or withdrawal from the study. These biases may affect the representativeness and comparability of the study population and the vaginal microbiome,X
+Bioinformatic and Statistical Methods,"Describe any transformations to quantitative variables used in analyses (e.g. use of percentages instead of counts, normalization, rarefaction, categorization).","If a variable is analyzed using different transformations, state rationale for the transformation and for each analyses which version of the variable is used.
+
+In case of any complex or multistep transformations, give enumerated instructions for reproducing those transformations.",QIIME2 and R used for analysis,M
+Quality Control,Describe any methods to identify or filter low quality reads or samples.,"If samples were excluded based on quality or read depth, list the criteria used, the number of samples excluded, and the final sample size after quality control.",Read quality was checked with FastQC and low-quality bases and adapters were trimmed with Trimmomatic. Reads with mean quality < 25 or length < 50 bp were removed with PRINSEQ. Five samples with < 10 million reads were dropped. The final size was 95.,M
+Sequence analysis,"Describe any taxonomic, functional profiling, or other sequence analysis performed.",,Taxonomic analysis with 16S rRNA gene sequencing and Vaginal 16S rDNA Reference Database to identify bacterial species and community types. Functional profiling with MetaTISA and KEGG to infer metabolic functions and pathways. Phylogenetic analysis with FastTree and GraPhlAn to compare evolutionary relationships and diversity,M
+Statistical methods,Describe all statistical methods.,"Describe any statistical tests used, exploratory data analysis performed, dimension reduction methods/unsupervised analysis, alpha/beta metrics, and/or methods for adjusting for measurement bias.
+
+If multiple statistical methods are possible, discuss why the methods used were selected.
+
+If a multiple hypothesis testing correction method was used, describe the type of correction used.
+
+State which taxonomic levels are analyzed.","Statistical analysis of the vaginal microbiota was done using R and vegan to test the differences in diversity, composition, and abundance of bacteria among groups. Exploratory data analysis was done using PCoA and hierarchical clustering to visualize the patterns and clusters of the microbiota. Dimension reduction was done using sPLS-DA to identify the key bacteria that discriminate between healthy and diseased women",X
+Longitudinal analysis,"If the study is longitudinal, include a section that explicitly states what analysis methods were used (if any) to account for grouping of measurements by individual or patterns over time.",,"The study is longitudinal, with vaginal swabs from 20 women at four time points. Linear mixed models were used to test the effects of time and covariates on the microbiota diversity and composition. Generalized estimating equations were used to test the association between microbiota and outcomes. Dynamic Bayesian networks were used to model the temporal changes and causal relationships among bacteria",X
+Subgroup analysis,Describe any methods used to examine subgroups and interactions.,,"Subgroup analysis by age, sex, and ethnicity. Interaction tests by Cox proportional hazards models. Kaplan-Meier curves and hazard ratios for results",X
+Missing data,Explain how missing data were addressed.,"""Missing data"" refers to participant measurements such as covariates, exposures, outcomes, or time points that should have been collected but were not, not to zeros in taxonomic abundance tables or data points not applicable to that observation.",Multiple imputation method used to handle missing values,X
+Sensitivity analyses,Describe any sensitivity analyses.,,"The number of samples per group and time point, to test the effect of sample size on the statistical power and significance of our findings",X
+Findings,"State criteria used to select findings for reporting. For example, false discovery rate with total number of tests, effect size threshold, significance threshold, microbes of interest.",,"•  False discovery rate (FDR) <0.05 for multiple testing correction, considering the total number of tests performed for bacterial taxa and metabolic pathways.
+
+•  Effect size threshold of log2 fold change >1 or <-1 for differential abundance analysis, indicating at least a twofold difference between groups.
+
+•  Significance threshold of p-value <0.05 for network analysis, indicating a significant causal relationship between bacterial taxa",X
+Software,"Cite all software (including read mapping software) and databases (including any used for taxonomic reference or annotating amplicons, if applicable) used. Include version numbers.","Installed packages, add-ons or libraries should be stated and cited in addition to the software used.
+
+All parameters employed that differ from the default of that software/version should be provided. 
+
+This is in addition to, not a replacement for, publishing of code as outlined in the section Reproducible Research.",Reads were mapped using Bowtie2 v2.2.3. Assemblies were performed using metaspades v3.15.3. ,X
+Reproducible research,Make a statement about whether and how others can reproduce the reported analysis.,"Any protected information that has been excluded or provided under controlled access should be listed along with any relevant data access procedures. """"On request from authors"""" is not sufficiently detailed; formal data access procedures and conditions should be defined.
+
+If data are unavailable, state so clearly.
+
+Consider using a specialized rubric for reproducible research (such as: https://mbio.asm.org/content/9/3/e00525-18.short).
+
+Consider preregistering the study protocol (such as on osf.io or https://plos.org/open-science/preregistration/).", Code and data available for reproducibility,X
+Source code access,State where code may be accessed.,"If a standard or formalized workflow was employed, reference it here.",Code hosted on GitHub repository,X
+Full results,"Provide full results of all analyses, in computer-readable format, in supplementary materials.","For example, any fold-changes, p-values, or FDR values calculated, provided as a spreadsheet.
+
+Use a machine-readable, plain-text format such as csv or tsv.",See GitHub repository,X
+Microbiome data,Report descriptive findings for microbiome analyses with all applicable outcomes and covariates.,This includes measures of diversity as well as relative abundances. These descriptive findings should be reported both for the sample overall and for individual groups.,Shannon diversity was positvely correlated with BV status,X
+Taxonomy,Identify taxonomy using standardized taxon classifications that are sufficient to uniquely identify taxa.,"If not using full taxonomic hierarchy, make sure it is clear whether names stated are species, genera, family, etc.
+
+Italicize genus/species pairs. Consult journal guidelines or standardized references on taxonomic nomenclature. For instance, https://wwwnc.cdc.gov/eid/page/scientific-nomenclature",Taxonomic assignments reported at the genus level,X
+Other data types,"Report other data analyzed--e.g. metabolic function, functional potential, MAG assembly, and RNAseq.",,"Our results confirm the previous findings that BV is associated with a shift in the vaginal microbiome from a Lactobacillus-dominated state to a polymicrobial state with increased anaerobic bacteria. This may have implications for the diagnosis and treatment of BV, as well as for the understanding of its pathophysiology and complications",X
+Key results,Summarise key results with reference to study objectives,,"Women with BV had lower diversity and higher variability of the vaginal microbiome than healthy women. The vaginal microbiome of healthy women was dominated by Lactobacillus spp., while the vaginal microbiome of women with BV was characterized by a higher abundance of anaerobic bacteria, such as Gardnerella, Prevotella, Atopobium, and Sneathia.",X
+Interpretation,"Give a cautious overall interpretation of results considering objectives, limitations, multiplicity of analyses, results from similar studies, and other relevant evidence.","Define or clarify any subjective terms such as """"dominant,"""" """"dysbiosis,"""" and similar words used in interpretation of results.
+
+When interpreting the findings, consider how the interpretation of the findings may be summarized or quoted for the general public such as in press releases or news articles.
+
+If causal language is used in the interpretation (such as """"alters,"""" """"affects,"""" """"results in,"""" """"causes,"""" or """"impacts""""), assumptions made for causal inference should be explicitly stated as part of 6.0 and 13.0.
+
+Distinguish between function potential (ie inferred from metagenomics) and observed activity (ie metatranscriptomic, metabolomic, proteomic) if discussing microbial function.","Our results confirm the previous findings that BV is associated with a shift in the vaginal microbiome from a Lactobacillus-dominated state to a polymicrobial state with increased anaerobic bacteria. This may have implications for the diagnosis and treatment of BV, as well as for the understanding of its pathophysiology and complications",X
+Funding,Give the source of funding and the role of the funders for the present study,,BMGF,X
+Acknowledgements,Include acknowledgements of those who contributed to the research but did not meet critera for authorship.,"For general guidelines on authorship, see http://www.icmje.org and https://www.elsevier.com/authors/journal-authors/policies-and-ethics/credit-author-statement",,X
+Conflicts of Interest,Include a conflicts of interest statement.,,,X
+Supplements,Indicate where supplements may be accessed and what materials they contain.,,,X
+Supplementary data,Provide supplementary data files of results with for all taxa and all outcome variables analyzed. Indicate the taxonomic level of all taxa.,"Depending on the analysis performed, examples of the supplemental results included could be mean relative abundance, differential abundance, raw p-value, multiple hypothesis testing-adjusted p-values, and standard error.
+
+All discussed taxa should include the taxonomic level (e.g. class, order, genus).","•        Relative abundance:
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7136476/bin/Data_Sheet_1.PDF
+
+•        Alpha-diversity 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9152327/bin/Presentation_1.pdf
+
+•        Beta-diversity 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9769055/bin/12866_2022_2730_MOESM3_ESM.tif
+
+•        Principal Coordinate Analysis (PCoA) 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8988226/bin/Image_1.tiff
+
+•        Functional and Metabolic pathways identified by HUManN2 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9241848/bin/spectrum.00105-22-s0001.pdf
+
+•        Longitudinal taxonomic composition of the metagenome and metatranscriptome:
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8886902/bin/13059_2022_2635_MOESM1_ESM.pdf
+",X
