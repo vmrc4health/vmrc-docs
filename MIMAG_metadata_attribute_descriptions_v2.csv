@@ -3,7 +3,7 @@ Attributes,Description,Format,Examples,Mandatory/Optional/ Conditional Mandatory
 ,,,,,
 Database_Identifiers,,,,,
 project_name,Name of the project within which the sequencing was organized,,VMRC,M,
-study_name,"Name of the study, in the format of 'project_name'_'study'",project_name'_'study',VMRC_PreSSMat,M,
+study_name,"Name of the study, in the format of 'project_name'_'study'",'project_name'_'study',VMRC_PreSSMat,M,
 bioproject_accession,The BioProject accession number assigned to your project,,PRJNAXXXXXX,X,
 File_Information,,,,,
 file_name,"Name of the file in gzipped format for reads, assemblies etc. For metagenomic sequence reads and assemblies, use prefix ""MG_"", for Metatranscriptomic sequence reads and assemblies, use prefix ""MT_"". For 16S data files, include the variable region studied (*.v4.R1.fastq.gz)",unique identifier,"20_00880_05.v4.R1.fq.gz, MG_20_00880_05.R1.fq.gz",M,
@@ -27,7 +27,7 @@ For Isolate genomes, provide sample taxonomy like Prevotella_bivia; for human mi
 strain,"Isolate/strain information for Isolate genomes. 
 
 This field is mandatory for Isolate genomes",,,C,Mandatory for Isolate Genomes
-sample_name,"A standardized, unique identifier for each sample, formatted as 'study_name'_'source_sample_id'. The 'study_name' indicates the name of the study, and the 'source_sample_id' is the original unique identifier assigned by the lab.",study_name'_'samp_title',VMRC_PreSSMat_20-00145-05,M,
+sample_name,"A standardized, unique identifier for each sample, formatted as 'study_name'_'source_sample_id'. The 'study_name' indicates the name of the study, and the 'source_sample_id' is the original unique identifier assigned by the lab.",'study_name'_'source_sample_id',VMRC_PreSSMat_20-00145-05,M,
 source_sample_id,"A unique identifier for the sample, assigned by your lab",,20-00145-05,M,
 sample_type,"Specify the type of your sample. Provide UBERON ontology term and ID, if available.  Pick a term from the controlled vocabulary. Please contact us if you need help finding UBERON ontology ID for your sample type.
 
@@ -136,7 +136,7 @@ pregnancy,"Date due of pregnancy,calculated at the time of enrollment in the for
 Subject_Information,,,,,
 host_taxon,Name and NCBI taxon ID of the host from which the sample was obtained. Refer to the Controlled Vocabulary file,"text,NCBI Taxonomy ID","Homo sapiens,NCBI:txid9606",M,
 source_subject_id,"A unique identifier for the subject, assigned by your lab",unique identifier,20-100010,M,
-host_subject_id,"A unique identifier by which each subject can be referred to, de-identified. Recommended format: 'study_name'_'source_subject_id'. If unknown, choose 'Not Available' from the pick list.",study_name'_'source_subject_id',VMRC_PreSSMat_20-100010,M,
+host_subject_id,"A unique identifier by which each subject can be referred to, de-identified. Recommended format: 'study_name'_'source_subject_id'. If unknown, choose 'Not Available' from the pick list.",'study_name'_'source_subject_id',VMRC_PreSSMat_20-100010,M,
 pregnancy_status,Pregnancy status of the host -  pregnant or not pregnant,text,pregnant,M,
 pregnancy_id,A numerical identifier representing the sequence number of a current pregnancy. This identifier starts at 1 for the first pregnancy and increments by 1 for each subsequent pregnancy.,numerical identifier,1,X,
 host_age,"Age of host,in years, at the time of sampling",,25,X,
