@@ -15,7 +15,7 @@ data_use_condition,"Term from the Data Use Ontology (DUO) to describe how the da
 
 https://www.ebi.ac.uk/ols4/ontologies/duo",Open data: DUO:0000004,C,
 file_format,Provide the file format type and EDAM ontology id. Refer to the Controlled Vocabulary file.,"csv,EDAM:3752",M,
-data_type,Provide the data category of file and EDAM ontology id. Refer to the Controlled Vocabulary file.,"Count matrix,EDAM:3917",M,
+data_type,Provide the data type of file and EDAM ontology id. Refer to the Controlled Vocabulary file.,"Count matrix,EDAM:3917",M,
 modality,Provide the modality/assay information. Refer to the Controlled Vocabulary file.,Metagenome,M,
 omics_technique,"Provide the name and OBI id of the specific method or technology used to generate omics data. Refer to the Controlled Vocabulary file.
 https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000070?lang=en
