@@ -3,7 +3,7 @@ Attributes,Description,Examples,Mandatory/Optional/ Conditional Mandatory,Commen
 project_name,Name of the project within which the sequencing was organized,VMRC,M,
 study_name,"Provide the study name, in the format of 'project_name'_'study'",VMRC_PreSSMat,M,
 bioproject_accession,The BioProject accession number assigned to your project,PRJNAXXXXXX,X,
-file_name,Provide filename ,,M,
+file_name,"Provide name of the file, including its extension",,M,
 file_desc,"Provide a short description of what the summary file data is about. 
 ","Metabolomic profiling,Immune Protein profiling via Luminex,Metagenomic reads mapped to VIRGO annotation table,16S abundance profile with ASVs and taxonomy information",M,
 uncompressed_filesize,Provide filesize in bytes for uncompressed file,,X,
@@ -14,8 +14,8 @@ Note: This field is mandatory. Enter Not Available, if information is not availa
 data_use_condition,"Term from the Data Use Ontology (DUO) to describe how the data is allowed to be used. Please fill this field if access level of your data is restricted or restricted_embargo. Refer to the Controlled Vocabulary file.
 
 https://www.ebi.ac.uk/ols4/ontologies/duo",Open data: DUO:0000004,C,
-file_type,Provide the file format type and EDAM ontology id. Refer to the Controlled Vocabulary file.,"csv,EDAM:3752",M,
-data_category,Provide the data category of file and EDAM ontology id. Refer to the Controlled Vocabulary file.,"Count matrix,data:3917",M,
+file_format,Provide the file format type and EDAM ontology id. Refer to the Controlled Vocabulary file.,"csv,EDAM:3752",M,
+data_type,Provide the data category of file and EDAM ontology id. Refer to the Controlled Vocabulary file.,"Count matrix,EDAM:3917",M,
 modality,Provide the modality/assay information. Refer to the Controlled Vocabulary file.,Metagenome,M,
 omics_technique,"Provide the name and OBI id of the specific method or technology used to generate omics data. Refer to the Controlled Vocabulary file.
 https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000070?lang=en
