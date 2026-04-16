@@ -17,8 +17,8 @@ Note: This field is mandatory. Enter Not Available, if information is not availa
 data_use_condition,"Term from the Data Use Ontology (DUO) to describe how the data is allowed to be used. Please fill this field if access level of your data is restricted or restricted_embargo. Refer to the Controlled Vocabulary file.
 
 https://www.ebi.ac.uk/ols4/ontologies/duo",,Open data: DUO:0000004,C,Mandatory if the data access is restricted or restrcited_embargo
-file_type,File format type and EDAM ontology id. Refer to the Controlled Vocabulary file.,,"fastq,EDAM:1930",M,
-data_category,Data category of file and EDAM ontology id. Refer to the Controlled Vocabulary file.,,"Taxonomy,EDAM:3028",M,
+file_format,File format type and EDAM ontology id. Refer to the Controlled Vocabulary file.,,"fastq,EDAM:1930",M,
+data_type,Data type of file and EDAM ontology id. Refer to the Controlled Vocabulary file.,,"Taxonomy,EDAM:3028",M,
 Sample_Information,,,,,
 modality,Modality/assay information. Refer to the Controlled Vocabulary file.,,"16Samplicon, Metagenome",M,
 samp_taxonomy,"Sample taxonomy and NCBI taxonomy id information. Refer to the Controlled Vocabulary file.
@@ -27,9 +27,9 @@ For Isolate genomes, provide sample taxonomy like Prevotella_bivia; for human mi
 strain,"Isolate/strain information for Isolate genomes. 
 
 This field is mandatory for Isolate genomes",,,C,Mandatory for Isolate Genomes
-samp_name,"A local identifier or name for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. Format recommended : 'study_name'_'samp_title'",study_name'_'samp_title',VMRC_PreSSMat_20-00145-05,M,
-samp_title,"A unique identifier for the sample, assigned by your lab",,20-00145-05,M,
-samp_type,"Specify the type of your sample. Provide UBERON ontology term and ID, if available.  Pick a term from the controlled vocabulary. Please contact us if you need help finding UBERON ontology ID for your sample type.
+sample_name,"A standardized, unique identifier for each sample, formatted as 'study_name'_'source_sample_id'. The 'study_name' indicates the name of the study, and the 'source_sample_id' is the original unique identifier assigned by the lab.",study_name'_'samp_title',VMRC_PreSSMat_20-00145-05,M,
+source_sample_id,"A unique identifier for the sample, assigned by your lab",,20-00145-05,M,
+sample_type,"Specify the type of your sample. Provide UBERON ontology term and ID, if available.  Pick a term from the controlled vocabulary. Please contact us if you need help finding UBERON ontology ID for your sample type.
 
 https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000463","text,UBERON ID","vaginal fluid,UBERON:0036243",X,
 cell_line,Name of specific cell line used in your study. Refer to the Controlled Vocabulary file. ,,primary vaginal epithelial cells (PVECs),C,
@@ -134,9 +134,9 @@ date_usg,"Date on which the USG-based dating of pregnancy was done, in the forma
 vdt_enr,"Date of enrollment, in the format of YYYY-MM-DD",date in YYYY-MM-DD,2025-01-01,X,
 pregnancy,"Date due of pregnancy,calculated at the time of enrollment in the format of YYYY-MM-DD",date in YYYY-MM-DD,2025-01-01,X,
 Subject_Information,,,,,
-host,Name and NCBI taxon ID of the host from which the sample was obtained. Refer to the Controlled Vocabulary file,"text,NCBI Taxonomy ID","Homo sapiens,NCBI:txid9606",M,
-orig_id,"A unique identifier for the subject, assigned by your lab",unique identifier,20-100010,M,
-host_subject_id,"A unique identifier by which each subject can be referred to, de-identified. Recommended format: 'study_name'_'orig_id'. If unknown, choose 'Not Available' from the pick list.",study_name'_'orig_id',VMRC_PreSSMat_20-100010,M,
+host_taxon,Name and NCBI taxon ID of the host from which the sample was obtained. Refer to the Controlled Vocabulary file,"text,NCBI Taxonomy ID","Homo sapiens,NCBI:txid9606",M,
+source_subject_id,"A unique identifier for the subject, assigned by your lab",unique identifier,20-100010,M,
+host_subject_id,"A unique identifier by which each subject can be referred to, de-identified. Recommended format: 'study_name'_'source_subject_id'. If unknown, choose 'Not Available' from the pick list.",study_name'_'source_subject_id',VMRC_PreSSMat_20-100010,M,
 pregnancy_status,Pregnancy status of the host -  pregnant or not pregnant,text,pregnant,M,
 pregnancy_id,A numerical identifier representing the sequence number of a current pregnancy. This identifier starts at 1 for the first pregnancy and increments by 1 for each subsequent pregnancy.,numerical identifier,1,X,
 host_age,"Age of host,in years, at the time of sampling",,25,X,
@@ -304,7 +304,7 @@ sga_10,Is the baby small for gestational age at 10th percentile cutoff?  (0 = no
 sga_3,Is the baby small for gestational age at 3rd percentile cutoff?  (0 = no; 1 = yes),"0,1",0,X,
 bwt_centile,Birth weight percentile for population,%,90,X,
 Contributor_Acknowledgement,,,,,
-authors,"Names of individuals contributing to the processes of sample collection,sequence generation, analysis, and data submission.Include the first and last names of all individuals that should be attributed, separated by a comma.
+contributors,"Names of individuals contributing to the processes of sample collection,sequence generation, analysis, and data submission.Include the first and last names of all individuals that should be attributed, separated by a comma.
 
 Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information not available.",,"Tejinder Singh, Fei Hu, Joe Blogs",M,
 contact_PI,"Name of the principal investigator (PI) to contact for additional information about the study or dataset
