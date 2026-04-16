@@ -4,7 +4,7 @@ project_id	Name of the study, in the format of 'project_name'_'study'
 bioproject_accession	The BioProject accession number assigned to your project
 file_name	Name of the file in gzipped format for reads, assemblies etc. 
 file_desc	Description of file (for summary files)
-size	Size of uncompressed summary file and compressed (gzipped) primary files in bytes
+size	The size of the file in the format in which it is stored in the Google Cloud bucket (e.g., compressed or uncompressed format). For user convenience, the uncompressed file size for primary files is also provided to indicate the approximate storage space required.
 uncompressed_filesize	Size of uncompressed primary file in bytes
 md5	md5sum for compressed (gzipped) primary files
 uncompressed_file_md5	md5sum for uncompressed summary and primary files
