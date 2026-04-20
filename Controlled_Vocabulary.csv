@@ -16,39 +16,49 @@ data_use,DUO,https://www.ebi.ac.uk/ols4/ontologies/duo
 ,"Embargoed data, publication moratorium: DUO:0000024",This data use modifier indicates that requestor agrees not to publish results of studies until a specific date.
 ,"Restricted, user specific restriction: DUO:0000026",This data use modifier indicates that use is limited to use by approved users.
 ,,
-file_type,EDAM,https://www.ebi.ac.uk/ols4/ontologies/edam/classes/http%253A%252F%252Fedamontology.org%252Fformat_1915?lang=en
-,"fastq,EDAM:1930",FASTQ short read format ignoring quality scores.
-,"fasta,EDAM:1929",FASTA format including NCBI-style IDs.
-,"csv,EDAM:3752",Tabular data represented as comma-separated values in a text file.
-,"tsv,EDAM:3475",Tabular data represented as tab-separated values in a text file.
-,"textual format,EDAM:2330","Textual format. Data in text format can be compressed into binary format, or can be a value of an XML element or attribute. Markup formats are not considered textual (or more precisely, not plain-textual)"
-,"bam,EDAM:2572","BAM format, the binary, BGZF-formatted compressed version of SAM format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data."
-,"cram,EDAM:3462",Reference-based compression of alignment format.
-,"bed,EDAM:3003","Browser Extensible Data (BED) format of sequence annotation track, typically to be displayed in a genome browser."
-,"bigBed,EDAM:3004","bigBed format for large sequence annotation tracks, similar to textual BED format."
-,"bigWig,EDAM:3006",bigWig format for large sequence annotation tracks that consist of a value for each sequence position. Similar to textual WIG format.
-,"Protein family report format,EDAM:2052",Format for reports on a protein family.
-,"Gene expression report format,EDAM:2058","Format of a file of gene expression data, e.g. a gene expression matrix or profile."
-,"HDF5,EDAM:3590","HDF5 is a data model, library, and file format for storing and managing data, based on Hierarchical Data Format (HDF). "
-,"Loom,EDAM:3913","The Loom file format is based on HDF5, a standard for storing large numerical datasets. The Loom format is designed to efficiently hold large omics datasets. Typically, such data takes the form of a large matrix of numbers, along with metadata for the rows and columns."
-,"mtx,EDAM:3916",The Matrix Market matrix (MTX) format stores numerical or pattern matrices in a dense (array format) or sparse (coordinate format) representation.
-,"R file,EDAM:3554","File format used for scripts written in the R programming language for execution within the R software environment, typically for statistical computation and graphics."
-,"VCF,EDAM:3016",Variant Call Format (VCF) is tabular format for storing genomic sequence variations. 
+file_format,EDAM,https://www.ebi.ac.uk/ols4/ontologies/edam/classes/http%253A%252F%252Fedamontology.org%252Fformat_1915?lang=en
+,"FASTQ,EDAM:format_1930",FASTQ short read format ignoring quality scores.
+,"FASTA,EDAM:format_1929",FASTA format including NCBI-style IDs.
+,"CSV,EDAM:format_3752",Tabular data represented as comma-separated values in a text file.
+,"TSV,EDAM:format_3475",Tabular data represented as tab-separated values in a text file.
+,"Textual format,EDAM:format_2330","Textual format. Data in text format can be compressed into binary format, or can be a value of an XML element or attribute. Markup formats are not considered textual (or more precisely, not plain-textual)"
+,"Genbank format,EDAM:format_1936",Genbank entry format.
+,"GFF,EDAM:format_2305",GFF feature format (of indeterminate version).
+,"GFF3,EDAM:format_1975",Generic Feature Format version 3 (GFF3) of sequence features.
+,"Sequin format,EDAM:format_3701","A five-column, tab-delimited table of feature locations and qualifiers for importing annotation into an existing Sequin submission (an NCBI tool for submitting and updating GenBank entries)."
+,"Sequence feature table format,EDAM:format_2548",Format for a sequence feature table.
+,"BAM,EDAM:format_2572","BAM format, the binary, BGZF-formatted compressed version of SAM format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data."
+,"CRAM,EDAM:format_3462",Reference-based compression of alignment format.
+,"BED,EDAM:format_3003","Browser Extensible Data (BED) format of sequence annotation track, typically to be displayed in a genome browser."
+,"bigBed,EDAM:format_3004","bigBed format for large sequence annotation tracks, similar to textual BED format."
+,"bigWig,EDAM:format_3006",bigWig format for large sequence annotation tracks that consist of a value for each sequence position. Similar to textual WIG format.
+,"Protein family report format,EDAM:format_2052",Format for reports on a protein family.
+,"Gene expression report format,EDAM:format_2058","Format of a file of gene expression data, e.g. a gene expression matrix or profile."
+,"HDF5,EDAM:format_3590","HDF5 is a data model, library, and file format for storing and managing data, based on Hierarchical Data Format (HDF). "
+,"Loom,EDAM:format_3913","The Loom file format is based on HDF5, a standard for storing large numerical datasets. The Loom format is designed to efficiently hold large omics datasets. Typically, such data takes the form of a large matrix of numbers, along with metadata for the rows and columns."
+,"MTX,EDAM:format_3916",The Matrix Market matrix (MTX) format stores numerical or pattern matrices in a dense (array format) or sparse (coordinate format) representation.
+,"R file format,EDAM:format_3554","File format used for scripts written in the R programming language for execution within the R software environment, typically for statistical computation and graphics."
+,"VCF,EDAM:format_3016",Variant Call Format (VCF) is tabular format for storing genomic sequence variations. 
 ,,
 ,,
-data_category,EDAM,https://www.ebi.ac.uk/ols4/ontologies/edam/classes/http%253A%252F%252Fedamontology.org%252Fdata_0006?lang=en
-,"DNA sequence,EDAM:3494",A DNA sequence.
-,"RNA sequence,EDAM:3495",An RNA sequence.
-,"Sequence alignment,EDAM:0863",Alignment of multiple molecular sequences.
-,"Sequence features,EDAM:1255","Annotation of positional features of molecular sequence(s), i.e. that can be mapped to position(s) in the sequence.This includes annotation of positional sequence features, organised into a standard feature table, or any other report of sequence features. General feature reports are a source of sequence feature table information although internal conversion would be required."
-,"Annotation track,EDAM:3002","Annotation of one particular positional feature on a biomolecular (typically genome) sequence, suitable for import and display in a genome browser."
-,"Sequence variations,EDAM:3498",Data on gene sequence variations resulting large-scale genotyping and DNA sequencing projects. Variations are stored along with a reference genome.
-,"Report,EDAM:2048","A human-readable collection of information including annotation on a biological entity or phenomena, computer-generated reports of analysis of primary data (e.g. sequence or structural), and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself."
-,"Protein family report,EDAM:0907",An informative report on a specific protein family or other classification or group of protein sequences or structures.
-,"Quality control report,EDAM:3914",Report of the quality control review that was made of factors involved in a procedure.
-,"Simulation,EDAM:3869","Data coming from molecular simulations, computer ""experiments"" on model molecules. Typically formed by two separated but indivisible pieces of information: topology data (static) and trajectory data (dynamic)."
-,"Count matrix,data:3917","A table of unnormalized values representing summarised read counts per genomic region (e.g. gene, transcript, peak)."
-,"Taxonomy,data:3028","Data concerning the classification, identification and naming of organisms. This is a broad data type and is used a placeholder for other, more specific types."
+data_type,EDAM,https://www.ebi.ac.uk/ols4/ontologies/edam/classes/http%253A%252F%252Fedamontology.org%252Fdata_0006?lang=en
+,"DNA sequence,EDAM:data_3494",A DNA sequence.
+,"RNA sequence,EDAM:data_3495",An RNA sequence.
+,"Protein sequence,EDAM:data_2976","One or more protein sequences, possibly with associated annotation."
+,"Sequence alignment,EDAM:data_0863",Alignment of multiple molecular sequences.
+,"Sequence record,EDAM:data_0849",A molecular sequence and associated metadata.
+,"Sequence features,EDAM:data_1255","Annotation of positional features of molecular sequence(s), i.e. that can be mapped to position(s) in the sequence.This includes annotation of positional sequence features, organised into a standard feature table, or any other report of sequence features. General feature reports are a source of sequence feature table information although internal conversion would be required."
+,"Sequence report,EDAM:data_2955","An informative report of information about molecular sequence(s), including basic information (metadata), and reports generated from molecular sequence analysis, including positional features and non-positional properties."
+,"Feature table,EDAM:data_1270","Annotation of positional sequence features, organised into a standard feature table."
+,"Annotation track,EDAM:data_3002","Annotation of one particular positional feature on a biomolecular (typically genome) sequence, suitable for import and display in a genome browser."
+,"Sequence variations,EDAM:data_3498",Data on gene sequence variations resulting large-scale genotyping and DNA sequencing projects. Variations are stored along with a reference genome.
+,"Report,EDAM:data_2048","A human-readable collection of information including annotation on a biological entity or phenomena, computer-generated reports of analysis of primary data (e.g. sequence or structural), and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself."
+,"Protein family report,EDAM:data_0907",An informative report on a specific protein family or other classification or group of protein sequences or structures.
+,"Quality control report,EDAM:data_3914",Report of the quality control review that was made of factors involved in a procedure.
+,"EC number,EDAM:data_1011",An Enzyme Commission (EC) number of an enzyme.
+,"Simulation,EDAM:data_3869","Data coming from molecular simulations, computer ""experiments"" on model molecules. Typically formed by two separated but indivisible pieces of information: topology data (static) and trajectory data (dynamic)."
+,"Count matrix,EDAM:data_3917","A table of unnormalized values representing summarised read counts per genomic region (e.g. gene, transcript, peak)."
+,"Taxonomy,EDAM:data_3028","Data concerning the classification, identification and naming of organisms. This is a broad data type and is used a placeholder for other, more specific types."
 ,Pathway mapping,Data linking biomolecules to biological pathways to represent their functional roles (eg. KEGG pathway annotations)
 ,Abundance matrix,"Counts or relative abundance profiling of features (eg. genes, proteins) or organisms classified by taxonomy across samples."
 ,,
@@ -145,9 +155,9 @@ samp_taxonomy,NCBI Taxonomy,https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax
 ,"Atopobium vaginae,NCBI:txid82135",NCBI Taxonomy term and id
 ,"mouse vaginal metagenome,NCBI:txid1549736","vaginal metagenome (NCBI does not have mouse-specific term, we have requested one)"
 ,,
-samp_type,UBERON,https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000463
+sample_type,UBERON,https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000463
 ,"cervical mucus,UBERON:0000316",A substance produced by the cervix and endocervical glands[BTO]. Thick acidic mucus that blocks the cervical os after mestruation[WP]. This 'infertile' mucus blocks spermatozoa from entering the uterus.
-,Cervicovaginal mucus,"A complex fluid produced by the cervix and vagina, acting as a barrier against pathogens and playing a crucial role in reproductive health, including fertility and pregnancy"
+,cervicovaginal mucus,"A complex fluid produced by the cervix and vagina, acting as a barrier against pathogens and playing a crucial role in reproductive health, including fertility and pregnancy"
 ,"vaginal fluid,UBERON:0036243",Fluid that lines the vaginal walls that consists of multiple secretions that collect in the vagina from different glands.
 ,"blood,UBERON:0000178",A fluid that is composed of blood plasma and erythrocytes.
 ,"feces,UBERON:0001988",Portion of semisolid bodily waste discharged through the anus
@@ -288,7 +298,7 @@ device,Ontology for BioMedical Investigations (OBI),https://www.ebi.ac.uk/ols4/o
 ,"tandem mass spectrometer,OBI:0001088",A mass spectrometer in which ions are subjected to two or more sequential stages of analysis (which may be separated spatially or temporally) according to the quotient mass/charge
 ,,
 ,,
-host,NCBI Taxonomy,https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
+host_taxon,NCBI Taxonomy,https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
 ,"Homo sapiens,NCBI:txid9606",NCBI Taxonomy term and id 
 ,"Mus musculus,NCBI:txid10090",NCBI Taxonomy term and id 
 ,,
@@ -328,10 +338,7 @@ race,,"A social classification based primarily on physical characteristics such 
 ,Black,
 ,White,
 ,Asian,
-,,
-ethnicity,,"A category of people who identify with each other, usually on the basis of presumed similarities such as a common language, ancestry, history, society, culture, nation or social treatment within their residing area. https://en.wikipedia.org/wiki/List_of_contemporary_ethnic_groups"
-,Hispanic/Latino,
-,Not Hispanic/Latino,
+,Latino,
 ,,
 null value,,Terms to be used for mandatory fields when the required information is missing or does not apply.
 ,Not Applicable,"For conditional mandatory fields, where conditions are not met"
