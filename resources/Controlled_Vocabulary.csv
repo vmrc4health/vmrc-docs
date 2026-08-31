@@ -1,0 +1,360 @@
+Attribute,CV terms,Definition
+access,,"Consented access level of data. 
+
+Note: This field is mandatory. Enter 'Not Available', if information is not available."
+,open,Data and metadata can be freely shared publicly immediately.
+,open_embargo,Data and metadata can be freely shared publicly after a stated embargo period ends.
+,restricted,Data and metadata can be shared with individuals who have been approved for access
+,restricted_embargo,"Data and metadata can be shared with individuals who have been approved for access after a stated embargo period ends. During the embargo period, individuals outside the project will not be able to request access."
+,,
+data_use,DUO,https://www.ebi.ac.uk/ols4/ontologies/duo
+,"Open, no restriction: DUO:0000004",This data use permission indicates there is no restriction on use.
+,"Controlled, General Research Use: DUO:0000042",This data use permission indicates that use is allowed for general research use for any research purpose.
+,"Controlled, health or medical or biomedical research: DUO:0000006",This data use permission indicates that use is allowed for health/medical/biomedical purposes; does not include the study of population origins or ancestry.
+,"Controlled, disease specific research: DUO:0000007",This data use permission indicates that use is allowed provided it is related to the specified disease.
+,"Embargoed data, publication moratorium: DUO:0000024",This data use modifier indicates that requestor agrees not to publish results of studies until a specific date.
+,"Restricted, user specific restriction: DUO:0000026",This data use modifier indicates that use is limited to use by approved users.
+,,
+file_format,EDAM,https://www.ebi.ac.uk/ols4/ontologies/edam/classes/http%253A%252F%252Fedamontology.org%252Fformat_1915?lang=en
+,"FASTQ,EDAM:format_1930",FASTQ short read format ignoring quality scores.
+,"FASTA,EDAM:format_1929",FASTA format including NCBI-style IDs.
+,"CSV,EDAM:format_3752",Tabular data represented as comma-separated values in a text file.
+,"TSV,EDAM:format_3475",Tabular data represented as tab-separated values in a text file.
+,"Textual format,EDAM:format_2330","Textual format. Data in text format can be compressed into binary format, or can be a value of an XML element or attribute. Markup formats are not considered textual (or more precisely, not plain-textual)"
+,"Genbank format,EDAM:format_1936",Genbank entry format.
+,"GFF,EDAM:format_2305",GFF feature format (of indeterminate version).
+,"GFF3,EDAM:format_1975",Generic Feature Format version 3 (GFF3) of sequence features.
+,"Sequin format,EDAM:format_3701","A five-column, tab-delimited table of feature locations and qualifiers for importing annotation into an existing Sequin submission (an NCBI tool for submitting and updating GenBank entries)."
+,"Sequence feature table format,EDAM:format_2548",Format for a sequence feature table.
+,"BAM,EDAM:format_2572","BAM format, the binary, BGZF-formatted compressed version of SAM format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data."
+,"CRAM,EDAM:format_3462",Reference-based compression of alignment format.
+,"BED,EDAM:format_3003","Browser Extensible Data (BED) format of sequence annotation track, typically to be displayed in a genome browser."
+,"bigBed,EDAM:format_3004","bigBed format for large sequence annotation tracks, similar to textual BED format."
+,"bigWig,EDAM:format_3006",bigWig format for large sequence annotation tracks that consist of a value for each sequence position. Similar to textual WIG format.
+,"Protein family report format,EDAM:format_2052",Format for reports on a protein family.
+,"Gene expression report format,EDAM:format_2058","Format of a file of gene expression data, e.g. a gene expression matrix or profile."
+,"HDF5,EDAM:format_3590","HDF5 is a data model, library, and file format for storing and managing data, based on Hierarchical Data Format (HDF). "
+,"Loom,EDAM:format_3913","The Loom file format is based on HDF5, a standard for storing large numerical datasets. The Loom format is designed to efficiently hold large omics datasets. Typically, such data takes the form of a large matrix of numbers, along with metadata for the rows and columns."
+,"MTX,EDAM:format_3916",The Matrix Market matrix (MTX) format stores numerical or pattern matrices in a dense (array format) or sparse (coordinate format) representation.
+,"R file format,EDAM:format_3554","File format used for scripts written in the R programming language for execution within the R software environment, typically for statistical computation and graphics."
+,"VCF,EDAM:format_3016",Variant Call Format (VCF) is tabular format for storing genomic sequence variations. 
+,,
+data_type,EDAM,https://www.ebi.ac.uk/ols4/ontologies/edam/classes/http%253A%252F%252Fedamontology.org%252Fdata_0006?lang=en
+,"DNA sequence,EDAM:data_3494",A DNA sequence.
+,"RNA sequence,EDAM:data_3495",An RNA sequence.
+,"Protein sequence,EDAM:data_2976","One or more protein sequences, possibly with associated annotation."
+,"Sequence alignment,EDAM:data_0863",Alignment of multiple molecular sequences.
+,"Sequence record,EDAM:data_0849",A molecular sequence and associated metadata.
+,"Sequence features,EDAM:data_1255","Annotation of positional features of molecular sequence(s), i.e. that can be mapped to position(s) in the sequence.This includes annotation of positional sequence features, organised into a standard feature table, or any other report of sequence features. General feature reports are a source of sequence feature table information although internal conversion would be required."
+,"Sequence report,EDAM:data_2955","An informative report of information about molecular sequence(s), including basic information (metadata), and reports generated from molecular sequence analysis, including positional features and non-positional properties."
+,"Feature table,EDAM:data_1270","Annotation of positional sequence features, organised into a standard feature table."
+,"Annotation track,EDAM:data_3002","Annotation of one particular positional feature on a biomolecular (typically genome) sequence, suitable for import and display in a genome browser."
+,"Sequence variations,EDAM:data_3498",Data on gene sequence variations resulting large-scale genotyping and DNA sequencing projects. Variations are stored along with a reference genome.
+,"Report,EDAM:data_2048","A human-readable collection of information including annotation on a biological entity or phenomena, computer-generated reports of analysis of primary data (e.g. sequence or structural), and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself."
+,"Protein family report,EDAM:data_0907",An informative report on a specific protein family or other classification or group of protein sequences or structures.
+,"Quality control report,EDAM:data_3914",Report of the quality control review that was made of factors involved in a procedure.
+,"EC number,EDAM:data_1011",An Enzyme Commission (EC) number of an enzyme.
+,"Simulation,EDAM:data_3869","Data coming from molecular simulations, computer ""experiments"" on model molecules. Typically formed by two separated but indivisible pieces of information: topology data (static) and trajectory data (dynamic)."
+,"Count matrix,EDAM:data_3917","A table of unnormalized values representing summarised read counts per genomic region (e.g. gene, transcript, peak)."
+,"Taxonomy,EDAM:data_3028","Data concerning the classification, identification and naming of organisms. This is a broad data type and is used a placeholder for other, more specific types."
+,Pathway mapping,Data linking biomolecules to biological pathways to represent their functional roles (eg. KEGG pathway annotations)
+,Abundance matrix,"Counts or relative abundance profiling of features (eg. genes, proteins) or organisms classified by taxonomy across samples."
+,,
+modality,in-house custom,Name of data modality used to categorize data at a high level - Pick a term from the Controlled Vocabulary. Please contact us if you cannot find your term in this list.
+,Genome - Whole Genome,The complete DNA sequencing of an organism's genome at a single time
+,Genome - Whole Exome,"The complete sequencing of all the exons in a genome, reflecting the protein-coding portion of a genome, which includes untranslated regions of messenger RNA, and coding regions."
+,Metagenome,Sequencing of a mixture of genomes from different species from a microbial community.
+,Virome,"Sequencing of the viral component of a microbiome, that consists of multiple genome sequences from different viruses present in the same input sample."
+,16Samplicon,Amplicon sequencing of the variable regions of the 16S rRNA gene
+,ITSamplicon,"Amplicon sequencing of the internal transcribed spacer (ITS) regions, commonly used for profiling fungal communities."
+,Immunology,Identification and/or quantification of immune-related proteins
+,Metabolome,"Identification and/or quantification of metabolites (sugars, fatty acids, lipids etc.), which are the products of metabolic reactions in cells or organisms. "
+,Transcriptome-RNA-seq,"Sequencing of a set of all RNA transcripts, including coding and non-coding, in a sample from a single organism"
+,Transcriptome-scRNA-seq,"Sequencing of a set of all RNA transcripts, including coding and non-coding, in a single cell"
+,Transcriptome-snRNA-seq,"Sequencing of a set of all RNA transcripts, including coding and non-coding, in a single nucleus"
+,Metatranscriptome-RNA-seq,"Sequencing of a set of all RNA transcripts, including coding and non-coding, from a microbiome sample"
+,Epigenome-ATAC-seq,"Sequencing of transposase-accessible chromatin, in order to determine areas of genome accessible for transcription"
+,Epigenome-ChIP-seq,"Sequencing of regions of DNA that bind to transcription factors and other proteins, through chromatin immunoprecipitation"
+,Multimodal,"A sequencing or analysis approach that integrates multiple types of molecular data (e.g., RNA, protein, chromatin accessibility) from the same sample or single cell to provide a more comprehensive understanding of biological processes. (e.g., scRNA-Seq + ATAC-Seq)"
+,Spatial_transcriptome,"A technique that combines gene expression profiling with spatial information to map RNA molecules within intact tissues, preserving the spatial context of gene expression."
+,,
+samp_taxonomy,NCBI Taxonomy,https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
+,"human vaginal metagenome,NCBI:txid1632839",human vaginal metagenome
+,"Homo sapiens,NCBI:txid9606",NCBI Taxonomy term and id
+,"human viral metagenome,NCBI:txid1070528",human viral metagenome
+,"Lactobacillus gasseri,NCBI:txid1596",NCBI Taxonomy term and id
+,"Lactobacillus crispatus,NCBI:txid47770",NCBI Taxonomy term and id
+,"Gardnerella vaginalis,NCBI:txid2702",NCBI Taxonomy term and id
+,"Lactobacillus jensenii,NCBI:txid109790",NCBI Taxonomy term and id
+,"Lactobacillus,NCBI:txid1578",NCBI Taxonomy term and id
+,"Bifidobacterium breve,NCBI:txid1685",NCBI Taxonomy term and id
+,"Enterococcus faecalis,NCBI:txid1351",NCBI Taxonomy term and id
+,"Streptococcus anginosus,NCBI:txid1328",NCBI Taxonomy term and id
+,"Prevotella bivia,NCBI:txid28125",NCBI Taxonomy term and id
+,"Lactobacillus vaginalis,NCBI:txid1633",NCBI Taxonomy term and id
+,"Prevotella disiens,NCBI:txid28130",NCBI Taxonomy term and id
+,"Bifidobacterium bifidum,NCBI:txid1681",NCBI Taxonomy term and id
+,"Varibaculum,NCBI:txid184869",NCBI Taxonomy term and id
+,"Propionimicrobium lymphophilum,NCBI:txid33012",NCBI Taxonomy term and id
+,"Porphyromonas,NCBI:txid836",NCBI Taxonomy term and id
+,"Lactobacillus reuteri,NCBI:txid1598",NCBI Taxonomy term and id
+,"Lactobacillus coleohominis,NCBI:txid181675",NCBI Taxonomy term and id
+,"Actinotignum,NCBI:txid1653174",NCBI Taxonomy term and id
+,"Varibaculum cambriense,NCBI:txid184870",NCBI Taxonomy term and id
+,"Staphylococcus epidermidis,NCBI:txid1282",NCBI Taxonomy term and id
+,"Cutibacterium avidum,NCBI:txid33010",NCBI Taxonomy term and id
+,"Prevotella corporis,NCBI:txid28128",NCBI Taxonomy term and id
+,"Bifidobacterium bifidum,NCBI:txid1681",NCBI Taxonomy term and id
+,"Enterococcus faecalis,NCBI:txid1351",NCBI Taxonomy term and id
+,"Streptococcus anginosus,NCBI:txid1328",NCBI Taxonomy term and id
+,"Prevotella bivia,NCBI:txid28125",NCBI Taxonomy term and id
+,"Lactobacillus vaginalis,NCBI:txid1633",NCBI Taxonomy term and id
+,"Prevotella disiens,NCBI:txid28130",NCBI Taxonomy term and id
+,"Bifidobacterium bifidum,NCBI:txid1681",NCBI Taxonomy term and id
+,"Varibaculum,NCBI:txid184869",NCBI Taxonomy term and id
+,"Propionimicrobium lymphophilum,NCBI:txid33012",NCBI Taxonomy term and id
+,"Porphyromonas,NCBI:txid836",NCBI Taxonomy term and id
+,"Lactobacillus reuteri,NCBI:txid1598",NCBI Taxonomy term and id
+,"Lactobacillus coleohominis,NCBI:txid181675",NCBI Taxonomy term and id
+,"Actinotignum,NCBI:txid1653174",NCBI Taxonomy term and id
+,"Varibaculum cambriense,NCBI:txid184870",NCBI Taxonomy term and id
+,"Staphylococcus epidermidis,NCBI:txid1282",NCBI Taxonomy term and id
+,"Cutibacterium avidum,NCBI:txid33010",NCBI Taxonomy term and id
+,"Prevotella corporis,NCBI:txid28128",NCBI Taxonomy term and id
+,"Lactobacillus fermentum,NCBI:txid1613",NCBI Taxonomy term and id
+,"Fenollaria massiliensis,NCBI:txid938288",NCBI Taxonomy term and id
+,"Fenollaria,NCBI:txid1686313",NCBI Taxonomy term and id
+,"Aerococcus christensenii,NCBI:txid87541",NCBI Taxonomy term and id
+,"Actinomyces neuii,NCBI:txid33007",NCBI Taxonomy term and id
+,"Actinomyces,NCBI:txid1654",NCBI Taxonomy term and id
+,"Lactobacillus iners,NCBI:txid147802",NCBI Taxonomy term and id
+,"Finegoldia magna,NCBI:txid1260",NCBI Taxonomy term and id
+,"Prevotella bergensis,NCBI:txid242750",NCBI Taxonomy term and id
+,"Porphyromonas somerae,NCBI:txid322095",NCBI Taxonomy term and id
+,"Peptoniphilus duerdenii,NCBI:txid507750",NCBI Taxonomy term and id
+,"Pediococcus acidilactici,NCBI:txid1254",NCBI Taxonomy term and id
+,"Cutibacterium acnes,NCBI:txid1747",NCBI Taxonomy term and id
+,"Atopobium deltae,NCBI:txid1393034",NCBI Taxonomy term and id
+,"Actinomyces radingae,NCBI:txid131110",NCBI Taxonomy term and id
+,"Prevotella timonensis,NCBI:txid386414",NCBI Taxonomy term and id
+,"Prevotella sp16,NCBI:txid59823",NCBI Taxonomy term and id
+,"Peptoniphilus harei,NCBI:txid54005",NCBI Taxonomy term and id
+,"Olegusella massiliensis,NCBI:txid1776381",NCBI Taxonomy term and id
+,"Facklamia hominis,NCBI:txid178214",NCBI Taxonomy term and id
+,"Corynebacterium pyruviciproducens,NCBI:txid598660",NCBI Taxonomy term and id
+,"Clostridium ventriculi,NCBI:txid1267",NCBI Taxonomy term and id
+,"Anaerococcus rubeinfantis,NCBI:txid1720199",NCBI Taxonomy term and id
+,"Anaerococcus,NCBI:txid165779",NCBI Taxonomy term and id
+,"Actinomyces turicensis,NCBI:txid131111",NCBI Taxonomy term and id
+,"Prevotella amnii,NCBI:txid419005",NCBI Taxonomy term and id
+,"Fenollaria massiliensis,NCBI:txid938288",NCBI Taxonomy term and id
+,"Ezakiella coagulans,NCBI:txid46507",NCBI Taxonomy term and id
+,"Atopobium vaginae,NCBI:txid82135",NCBI Taxonomy term and id
+,"mouse vaginal metagenome,NCBI:txid1549736","vaginal metagenome (NCBI does not have mouse-specific term, we have requested one)"
+,,
+sample_type,,Specify the type of your sample. Pick a term from the Controlled Vocabulary. Please contact us if you cannot find your term in this list.
+,biological sample,A biological specimen collected from a subject for experimental analysis.
+,positive control,A reference sample expected to produce positive result under correct testing conditions.
+,negative control,A reference sample expected to yield a null or negative result
+,isolate culture,A material entity that represents a pure microbial population obtained through a culturing process from a biological or environmental specimen.
+,,
+cell_line,,Name of specific cell line used in your study. Pick a term from the Controlled Vocabulary. Please contact us if you cannot find your term in this list.
+,primary cell lines,Derived directly from tissues
+,immortalized cell lines,"Genetically modified or naturally mutated to grow indefinitely (e.g., HeLa, HEK293)."
+,stem cell lines,Pluripotent or multipotent cells used in regenerative medicine.
+,primary vaginal epithelial cells (PVECs),Directly isolated from vaginal biopsies or swabs
+,VK2/E6E7 (Vaginal Keratinocyte Cell Line),Immortalized vaginal keratinocyte cell line
+,End1/E6E7 (Endocervical Epithelial Cell Line),Immortalized endocervical epithelial cell line
+,Ect1/E6E7 (Ectocervical Epithelial Cell Line) ,Immortalized ectocervical epithelial cell line
+,CaSki & HeLa (Cervical Cancer Cell Lines),cell lines primarily used in cervical cancer research
+,,
+cell_type,Cell Ontology (CL),https://www.ebi.ac.uk/ols4/ontologies/cl
+,"vagina squamous cell,CL:1001578",Squamous cell of vaginal epithelium
+,"epithelial cell of uterus,CL:0002149",An epithelial cell of the uterus. This cell has a mesodermal origin.
+,"endometrial multiciliated epithelial cell,CL:4030040 ","A multi-ciliated cell of the endometrial epithelium. This cell is characterized by the presence of 9+2 motile cilia on its apical surface, which facilitates the movement of mucus across the endometrial surface."
+,"epithelial cell of cervix,CL:0002535",An epithelial cell of the cervix.
+,"columnar cell of endocervix,CL:0002152",A simple columnar epithelial cell located in the endocervix
+,"uterine cervix secretory cell,CL:1001587
+",Glandular cell of uterine cervix epithelium.
+,"squamous cell of ectocervix,CL:0002244",A stratified squamous epithelial cell located in the ectocervix.
+,"columnar cell of endocervix,CL:0002152",A simple columnar epithelial cell located in the endocervix.
+,"uterine cervix squamous cell,CL:1001575",Squamous cell of uterine cervix epithelium.
+,,
+samp_collect_device,,The instrument or tool used to obtain a biological or environmental sample from its source.
+,swab,A small piece of absorbent material used to collect samples from the body
+,brush,"A specialized medical tool, often with bristles or a flexible head, used to collect cells or tissue samples from various body areas for diagnostic or research purposes"
+,pipette,"A laboratory instrument used to transfer and collect liquid samples with precision, often employed for biological fluids such as blood, urine, or vaginal secretions."
+,cytobrush,"A specialized small brush used primarily for cervical cytology, designed to collect cells from the cervix for Pap smears and other diagnostic tests."
+,softcup," A flexible, cup-shaped device used to collect vaginal or menstrual fluid samples non-invasively for research, diagnostics, or reproductive health monitoring."
+,forceps,"A tweezer-like instrument used to grasp, manipulate, or remove tissue samples, foreign objects, or medical devices during sample collection or surgical procedures."
+,pipelle catheter,"A thin, flexible tube used to collect endometrial tissue samples through suction, commonly utilized in uterine biopsy procedures."
+,curette,"A spoon-shaped surgical instrument used for scraping or removing tissue, often used in procedures such as endometrial or cervical biopsies."
+,thin needle,"A fine, hollow needle used for minimally invasive sampling, to collect cells or fluid from tissues for diagnostic analysis."
+,biopsy punch tool,"A circular blade instrument used to remove small, cylindrical tissue samples for histopathological examination, commonly used for skin, cervical, or vaginal biopsies."
+,,
+samp_collect_method,Ontology for BioMedical Investigations (OBI),https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000659?lang=en
+,"collecting specimen with swab,OBI:0002600","A specimen collection process that uses a swab as the collection device. A swab is an absorbent material (e.g. cotton) on a rod (e.g., wooden stick)."
+,"biopsy,OBI:0002650",A specimen collection that obtains a sample of tissue or cell from a living multicellular organism body for diagnostic purposes by means intended to be minimally invasive.
+,"skinpunch biopsy,OBI:0002663","A biopsy that involves the collection of a cylinder of skin (including epidermis, dermis and superficial fat) using a punch tool."
+,"needle biopsy,OBI:0002654",A biopsy that uses a hollow needle to extract cells.
+,"surgical biopsy,OBI:0002657",A biopsy involving a surgical incision into an organism to access the biopsy material.
+,"lavage,OBI:0600044",A protocol application to separate cells and/or cellular secretions from an anatomical space by the introduction and removal of fluid
+,cervicovaginal lavage,"A procedure where a liquid is instilled into the vaginal and ectocervical mucosal surfaces, then reaspirated from the posterior fornix, to collect a sample for analysis, offering a more comprehensive assessment than swabs. 
+"
+,,
+samp_collect_by,,If the sample was collected by the participant or a clinician
+,participant,
+,clinician,
+,,
+samp_collect_loc,,Location of sample collection
+,home,
+,clinic,
+,hospital,
+,,
+samp_storage_medium,,The substance or condition in which a collected sample is stored before analysis. Pick a term from the Controlled Vocabulary.
+,dry brush,A sample storage method where collected sample remains on a dry brush.
+,dry swab,"A swab-based sample storage method without liquid preservatives, used for short-term storage or transport before processing."
+,nuclei acid stabilizing solution,"A chemical medium designed to preserve DNA or RNA integrity by preventing degradation, commonly used for genetic and molecular analyses."
+,sterile transport medium,"A sterile liquid or gel medium that maintains sample viability during transport, used for various biological specimens."
+,Amies transport medium,"A buffered semi-solid medium that preserves microbial viability, commonly used for bacterial culture transport."
+,Liquid-Based Cytology (LBC) Medium,"A liquid preservative used for collecting and storing cells for cytological examination, such as Pap tests or other diagnostic screenings."
+,liquid nitrogen,"An ultra-low-temperature storage medium (-196°C) used for freezing and preserving biological samples, including cells, tissues, and genetic material, for long-term storage."
+,,
+omics_technique,Ontology for BioMedical Investigations (OBI),"The specific method or technology used to generate omics data. Provide OBI ontology term and ID, if available. 
+
+https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000070?lang=en"
+,"amplicon sequencing assay,OBI:0002767",A sequencing assay in which a DNA or RNA input molecule is amplified by PCR and the product sequenced.
+,"16s ribosomal gene sequencing assay,OBI:0002763",An amplicon sequencing assay in which the amplicon is derived from universal primers used to amplify the 16S ribosomal RNA gene from isolate bacterial genomic DNA or metagenomic DNA from a microbioal community. Resulting sequences are compared to reference 16S sequence databases to identify or classify bacteria present within a given sample.
+,"whole metagenome sequencing assay,OBI:0002623",A DNA sequencing assay that intends to provide information on the DNA sequences of multiple genomes (a metagenome) from different organisms present in the same input sample.
+,"whole genome sequencing assay,OBI:0002117",A DNA sequencing assay that intends to provide information about the sequence of an entire genome of an organism.
+,"metatranscriptome sequencing assay,OBI:0002760",An RNA-seq assay that determines the RNA sequence of microbial transcripts from a microbioal community of mixed species from a given microbiome.
+,"metabolite profiling assay,OBI:0000366",An assay that detects and identifies chemical entities resulting from biochemical and cellular metabolism
+,"microbiome protein expression profiling assay,OBI:0002765",A protein expression profiling assay of microbial proteins extracted from a microbioal community of mixed species from a given microbiome.
+,"cytometry assay,OBI:0001977",An assay that counts and/or measures characteristics of cells.
+,"ChIP-seq assay,OBI:0000716",An assay in which chromatin is immunoprecipitated and subsequently analyzed using a DNA sequencing step to identify which parts of DNA are part of the isolated chromatin
+,"slide-seq assay,OBI:0003107","An RNA-seq assay that involves transfer of RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing."
+,"single-cell RNA sequencing assay,OBI:0002631",An RNA sequencing assay that uses RNA extracts as input that can be traced to a single cell of origin.
+,"single-cell combinatorial indexing RNA sequencing assay,OBI:0003105",A single-cell RNA sequencing assay that involves single cell combinatorial indexing ('sci-') strategy to profile the transcriptomes of single cells or nuclei without single cell isolation.
+,"single-cell ATAC-seq,OBI:0002764","An ATAC assay designed to robustly map the accessible genome of individual cells, using sequencing integrated into a programmable microfluidics platform, in order to provide insights into cell-to-cell variation in accessibility profiles."
+,scChIP-seq,A single-cell chromatin immunoprecipitation followed by sequencing assay that profiles protein-DNA interactions—such as histone modifications or transcription factor binding—at single-cell resolution. It enables the study of epigenetic heterogeneity across individual cells.
+,"transcription profiling assay,OBI:0000424",An assay that determines gene expression and transcription activity using ribonucleic acids collected from a material entity.
+,10x 3' transcription profiling,A single-cell RNA sequencing assay utilizing 10x Genomics 3' gene expression technology to profile transcript abundance by capturing the 3' end of polyadenylated mRNA from individual cells.
+,10x 5' transcription profiling,A single-cell RNA sequencing assay utilizing 10x Genomics 5' gene expression technology to profile transcript abundance by capturing the 5' end of polyadenylated mRNA from individual cells.
+,10x immune profiling,"A single-cell trancription and immune repertoire profiling assay utilizing 10X Genomics Technology to simultaneously analyze gene expression and T-cell or B-cell receptor sequences, enabling detailed characterization of immune cell identity and clonality."
+,10X Genomics Multiome,A single-cell multi-omics assay using 10x Genomics Technology to simultaneously profile gene expression (scRNA-seq) and chromatin accessibility (scATAC-seq) from the same cell using microfluidic droplet-based technology.
+,10x scATAC-seq,A single cell ATAC-seq method that utilizes 10x Chromium technology to profile chromatin accessibility at single-cell resolution.
+,Visium Spatial Gene Expression,A spatial transcriptomics method developed by 10x Genomics that measures either the whole transcriptome or a defined set of transcripts in intact tissue sections and maps where gene activity is occurring.
+,Fluidigm C1,"A microfluidic-based transcription profiling assay technique used to analyze gene expression at single-cell resolution. It automates cell capture, lysis, reverse transcription, and cDNA amplification, enabling high-resolution, full-length transcriptome analysis from individual cells."
+,Drop-seq,"A microfluidic, droplet-based single-cell RNA sequencing method that enables high-throughput transcriptional profiling of thousands of individual cells."
+,Smart-seq2,A full-length single-cell RNA sequencing (scRNA-seq) assay that enables sensitive and accurate transcription profiling by capturing entire transcripts from individual cells using a plate-based method.
+,Smart-seq3,"An advanced plate-based single-cell RNA sequencing (scRNA-seq) assay that captures both full-length transcripts and 5′ transcript counts, enabling highly sensitive and quantitative gene expression profiling at single-cell resolution. Smart-seq3 improves upon Smart-seq2 by adding unique molecular identifiers (UMIs) at the 5′ end, allowing for more accurate quantification of gene expression and detection of transcript isoforms."
+,Smart-seq v4,"A plate-based full-length single-cell RNA sequencing (scRNA-seq) assay that utilizes SMART (Switching Mechanism at the 5' end of RNA Template) technology to provide highly sensitive and accurate transcriptome profiling from individual cells, capturing entire transcripts for isoform-level analysis."
+,SPLiT-seq,Split Pool Ligation-based Transcriptome sequencing(SPLiT-seq) is a single-cell RNA sequencing technique that uses combinatorial barcoding through multiple rounds of split-pool processing to label RNA from thousands of individual cells without the need for physical isolation or microfluidics.
+,,
+device,Ontology for BioMedical Investigations (OBI),https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000968?lang=en
+,"PacBio Sequel,OBI:0002632","A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation with long reads and high consensus accuracy, and manufactured by the Pacific Biosciences corporation"
+,"PacBio Sequel II,OBI:0002633","A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation of highly accurate (""HiFi"") long reads, and which is manufactured by the Pacific Biosciences corporation."
+,PacBio Sequel IIe,"A DNA sequencer built upon single molecule real-time sequencing technology, and manufactured by the Pacific Biosciences corporation, optimized for generation of highly accurate (""HiFi"") long reads. The Sequel IIe system is the next instrument evolution of Sequel II, with increased computational capacity and advanced on-instrument data processing, helping in discoveries made possible with comprehensive views of genomes, transcriptomes and epigenomes."
+,"PacBio RS II,OBI:0002012","A DNA sequencer which is manufactured by the Pacific Biosciences corporation. Built upon single molecule real-time sequencing technology, the machine is optimized for generation with long reads and high consensus accuracy"
+,PacBio Revio,"A DNA sequencer built upon single molecule real-time sequencing technology, and manufactured by the Pacific Biosciences corporation, which features generation of high-throughput, highly accurate (""HiFi"") long reads, variant calling and direct methylation detection. The Revio system can generate 1,300 human HiFi genomes per year which is 15× more than the Sequel IIe system. It will enable the use of HiFi sequencing for large studies in human genetics, cancer research, agricultural genomics, and more."
+,"Illumina Genome Analyzer II,OBI:0000703",A DNA sequencer which is manufactured by Illumina (Solexa) corporation. It supports sequencing of single or paired end clone libraries relying on sequencing by synthesis technology
+,"Genome Analyzer IIe,OBI:0002027","An Illumina Genome Analyzer II which is manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology. The Genome Analyzer IIe makes industry-leading next-generation sequencing technology accessible to more laboratories"
+,"Genome Analyzer IIx,OBI:0002000","An Illumina Genome Analyzer II which is manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology. The Genome Analyzer IIx is the most widely adopted next-generation sequencing platform and proven and published across the broadest range of research applications"
+,"Illumina MiSeq,OBI:0002003","A DNA sequencer which is manufactured by the Illumina corporation. Built upon sequencing by synthesis technology, the machine provides an end-to-end solution (cluster generation, amplification, sequencing, and data analysis) in a single machine."
+,"Illumina NovaSeq 6000,OBI:0002630","A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and an output of up to 6000 Gb (32-40 B reads per run). The sequencer utilizes synthesis technology and patterned flow cells to optimize throughput and even spacing of sequencing clusters"
+,"Illumina NovaSeq X,OBI:0003663","A DNA sequencer with three flow cell types manufactured by Illumina. The NovaSeq X provides an output of up to 8 Tb (26-52 billion reads per run). The sequencer utilizes XLEAP-SBS chemistry, an advanced version of Illumina's sequencing by synthesis (SBS) technology, which enables faster and more accurate sequencing."
+,"Illumina NovaSeq X Plus,OBI:0003664","A DNA sequencer with three flow cell types manufactured by Illumina. It features a dual-flow cell configuration, allowing to reach an output of up to 16 Tb (52-104 billion reads per run). The sequencer utilizes XLEAP-SBS chemistry, an advanced version of Illumina's sequencing by synthesis (SBS) technology, which enables faster and more accurate sequencing."
+,"Illumina HiSeq 1000,OBI:0002022","A DNA sequencer which is manufactured by the Illumina corporation, with a single flow cell and a throughput of up to 35 Gb per day. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology"
+,"Illumina HiSeq 2000,OBI:0002001","A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and a throughput of up to 55 Gb per day. Built upon sequencing by synthesis technology, the machine is optimized for generation of data for multiple samples in a single run"
+,"Illumina HiSeq 2500,OBI:0002002","A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and a throughput of up to 160 Gb per day. Built upon sequencing by synthesis technology, the machine is optimized for generation of data for batching multiple samples or rapid results on a few samples"
+,"Illumina HiSeq 3000,OBI:0002048","A DNA sequencer manufactured by Illumina corporation, with a single flow cell and a throughput of more than 200 Gb per day"
+,"Illumina HiSeq 4000,OBI:0002049","A DNA sequencer manufactured by Illumina corporation, with two flow cell and a throughput of more than 400 Gb per day"
+,"Illumina HiSeq X Ten,OBI:0002129",A DNA sequencer that consists of a set of 10 HiSeq X Sequencing Systems
+,Illumina HiSeq X Five,"A DNA sequencer manufactured by Illumina corporation, which uses proven Illumina sequencing by synthesis (SBS) chemistry. It consists of 5 individual HiSeq X instruments, which together can sequence over 9000 genomes per year."
+,"Illumina MiniSeq,OBI:0003114","A small benchtop DNA sequencer which is manufactured by the Illumina corporation with integrated cluster generation, sequencing and data analysis. The sequencer accommodates various flow cell configurations and can produce up to 25M single reads or 50M paired-end reads per run"
+,Illumina iSeq 100,"A DNA sequencer manufactured by the Illumina corporation, with a minimum output of 1.2 Gb of data per run in 19 hours. It is ideal for small whole-genome sequencing (eg, bacteria, viruses, plasmids), targeted sequencing of a set of genes or gene regions, gene expression analysis, or 16S metagenomics. It allows greater statistical confidence for calling variants or low-frequency alleles."
+,"Illumina NextSeq 500,OBI:0002021","A DNA sequencer which is a desktop sequencer ideal for smaller-scale studies manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology"
+,"Illumina NextSeq 550,OBI:0003387","A DNA sequencer manufactured by the Illumina corporation, which provides the increased flexibility of microarray scanning in addition to sequencing."
+,"Illumina NextSeq 1000,OBI:0003606",A DNA sequencer which is manufactured by the Illumina corporation using sequence-by-synthesis chemistry that fits on a benchtop and uses P1 and P2 flow cells.
+,Illumina NextSeq 2000,"A DNA sequencer manufactured by the Illumina corporation, which uses advancements in optics, instrument design, and 2-channel chemistry to increase output. It uses larger P3 flow cell, in addition to P1 and P2 flow cells, and thus, has higer throughput relative to NextSeq 1000 system. It is a scalable platform that supports more complex, informative studies and a broad range of standard NGS methods, as well as emerging techniques, including spatialomics."
+,"Oxford Nanopore GridION Mk1,OBI:0002751","A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, that can run and analyze up to five individual flow cells producing up to 150 Gb of data per run. The sequencer produces real-time results and utilizes nanopore technology with the option of running the flow cells concurrently or individually"
+,"Oxford Nanopore MinION,OBI:0002750","A portable DNA sequencer which is manufactured by the Oxford Nanopore Technologies corporation, that uses consumable flow cells producing up to 30 Gb of DNA sequence data per flow cell. The sequencer produces real-time results and utilizes nanopore technology with up to 512 nanopore channels in the sensor array"
+,"Oxford Nanopore PromethION,OBI:0002752","A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, capable of running up to 48 flow cells and producing up to 7.6 Tb of data per run. The sequencer produces real-time results and utilizes Nanopore technology, with each flow cell allowing up to 3,000 nanopores to be sequencing simultaneously"
+,"Liquid chromatography instrument,OBI:0001139",A chromatography device that dissolves a mixture in liquid mobile phase to separate the analyte to be measured from other molecules in the mixture and allows it to be isolated
+,"Mass spectrometer,OBI:0000049","A mass spectrometer is an instrument which is used to measure the mass to charge ratio of ions. All mass spectrometers consist of three basic parts: an ion source, a mass analyzer, and a detector system. The stages within the mass spectrometer are: 1. Production of ions from the sample 2. Separation of ions with different masses 3. Detection of the number of ions of each mass produced 4.Collection of data to generate the mass spectrum"
+,"liquid chromatography mass spectrometry platform,OBI:0000051","A liquid chromatography mass spectrometry platform is a platform that is the collection of instrument, software and reagents needed to perform a liquid chromatography mass spectrometry protocol."
+,"high performance liquid chromatography instrument,OBI:0001057","A liquid chromatography instrument that consists of a reservoir of mobile phase, a pump, an injector, a separation column, and a detector. The pump (rather than gravity) provides the higher pressure required to propel the mobile phase and analyte through the densely packed column"
+,"gas chromatography equipment,OBI:0000542",Any device used in a gas chromatography experiment
+,"Luminex 100,OBI:0400069",The Luminex 100 is a flow_cytometer_analyser manufactured by Luminex. It is a single laser system (575 nm) with avalanche photodiodes in red and infrared and a single PMT for fluorescence. The flow chamber is a square quartz cuvette
+,"Luminex 200,OBI:0400070","A Luminex_200 is a flow_cytometer_analyser manufactured by Luminex. The optical specifications are: Reporter laser: 532 nm, nominal output 10 - 15 mW, maximum 500 mW, frequency-doubled diode; mode of operation, continuous wave (CW). Classification laser: 635 nm, 9.1 __ 6%, maximum output 25 mW, diode; mode of operation, continuous wave (CW) Reporter detector: Photomultiplier tube, detection bandwidth of 565 - 585 nm Classification detector and doublet discriminator: Avalanche photo diodes with temperature compensation"
+,"flow cytometer,OBI:0400044","A flow_cytometer is an instrument for counting, examining and sorting microscopic particles in suspension. It allows simultaneous multiparametric analysis of the physical and/or chemical characteristics of single cells flowing through an optical and/or electronic detection apparatus. A flow cytometer is an instrument that can be used to quantitatively measure the properties of individual cells in a flowing medium"
+,"flow cytometer analyzer,OBI:0400008","An analyser is a flow_cytometer that is used to measure properties of particles (whole cells, nuclei, chromosomes, diatoms, plankton, bacteria, viruses) by moving these particles through a detection chamber. An analyser is used to collect data for analysis"
+,"tandem mass spectrometer,OBI:0001088",A mass spectrometer in which ions are subjected to two or more sequential stages of analysis (which may be separated spatially or temporally) according to the quotient mass/charge
+,,
+host_taxon,NCBI Taxonomy,https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
+,"Homo sapiens,NCBI:txid9606",NCBI Taxonomy term and id 
+,"Mus musculus,NCBI:txid10090",NCBI Taxonomy term and id 
+,,
+pregnancy_status,,Host pregnancy status
+,pregnant,
+,not pregnant,
+,,
+host_body_site,Uber-Anatomy Ontology (UBERON),https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000467?lang=en
+,"vagina,UBERON:0000996","A fibromuscular tubular tract leading from the uterus to the exterior of the body in female placental mammals and marsupials, or to the cloaca in female birds, monotremes, and some reptiles[WP]"
+,"mammalian vulva,UBERON:0000997",External genital organ of the female mammal
+,"vagina orifice,UBERON:0012317","The median slit located inferior and posterior to the external urethral orifice in the female; the exit for menstrual flow and birth and the entrance for the penis during sexual intercourse; the size and appearance of the vaginal orifice varies inversely with that of the hymen (G. membrane), a thin fold of mucous membrane that surrounds the vaginal orifice"
+,"wall of vagina,UBERON:0036523",An anatomical wall that is part of a vagina. An anatomical wall is the organ component adjacent to an organ cavity and which consists of a maximal aggregate of organ component layers.
+,"fornix of vagina,UBERON:0000051","The deepest portions of the vagina, extending into the recesses created by the vaginal portion of cervix."
+,"anterior fornix of vagina,UBERON:0016487",The vaginal fornix that is front of the cervix. It is close to the vesico-uterine pouch. 
+,"lateral fornix of vagina,UBERON:0034963",The vaginal fornix that is to the side of the cervix. 
+,"posterior fornix of vagina,UBERON:0016486",The vaginal fornix that is behind the cervix. It is close to the recto-uterine pouch.
+,"ectocervix,UBERON:0012249",The part of the cervix uteri that protrudes into the vagina and is lined with stratified squamous epithelium.
+,"endocervix,UBERON:0000458",The region of the opening of the uterine cervix into the uterine cavity.
+,"endometrium,UBERON:0001295",The glandular mucous membrane lining of the uterine cavity that is hormonally responsive during the estrous/menstrual cycle and during pregnancy.
+,"upper part of vagina,UBERON:0003974",The upper third of the vagina
+,"lower part of vagina,UBERON:0015243",The lower third of the vagina
+,middle part of vagina,The middle third of the vagina
+,"epithelium of vagina,UBERON:0001344","The epithelial layer of the vagina. An epithelium is a portion of tissue, that consists of one or more layers of epithelial cells connected to each other by cell junctions and which is underlain by a basal lamina."
+,"vagina squamous epithelium,UBERON:0006923",A squamous epithelium that is part of a vagina. A squamous epithelium is an epithelium characterised by its most superficial layer consisting of squamous epithelial cells.
+,"lamina propria of vagina,UBERON:0005205",A lamina propria that is part of a vagina. Lamina propria is a thin layer of loose connective tissue which lies beneath the epithelium and together with the epithelium constitutes the mucosa
+,"mucosa of vagina,UBERON:0004983","A mucosa that is part of a vagina. A mucosa is a lining of mostly endodermal origin, covered in epithelium, which is involved in absorption and secretion. They line various body cavities that are exposed to the external environment and internal organs."
+,"rugal fold of vagina,UBERON:0008798","A rugal fold that is part of a vagina. A rugal fold is a ridge or fold, such as the rugae of the stomach, which are large folds in the mucous membrane of that organ."
+,"lumen of vagina,UBERON:0011894",An organ cavity that is part of a vagina
+,"lateral vaginal canal,UBERON:0013523",One of two lateral tracts connecting a uterus to a common median tract separated from the median vagina via ureters which prevent their fusion. Found in marsupials
+,"median vaginal canal,UBERON:0013524","A median canal in the reproductive system of marsupials that connects the uteri to a common tract, joining with the two lateral vaginas. Connects the uterine openings directly with the urogenital sinus"
+,"muscular layer of vagina,UBERON:0006652",A layer of smooth muscle with bundles of circular fibers internal to longitudinal fibers (those that run lengthwise). (https://en.wikipedia.org/wiki/Vagina)
+,"vagina sebaceous gland,UBERON:0003485","A sebaceous gland that is part of a vagina. A sebaceous gland is a holocrine gland that secretes sebum into the hair follicles, or in hairless areas into ducts."
+,"vagina smooth muscle,UBERON:0004223","A portion of smooth muscle tissue that is part of a vagina. A smooth muscle tissue is the muscle tissue which is unstriated, composed primarily of smooth muscle fibers surrounded by a reticulum of collagen and elastic fibers"
+,"vaginal hymen,UBERON:0001346",A membrane that surrounds or partially covers the vaginal opening
+,"vaginal sphincter,UBERON:0012487","A sphincter muscle that is part of a vagina. A sphincter muscle is usually a circular muscle, that normally maintains constriction of a natural body passage or orifice and which relaxes as required by normal physiological functioning."
+,"vaginal vein,UBERON:0001319","One the veins that drains the vaginal venous plexus, into the hypogastric veins. A venous plexus is a congregation of multiple veins."
+,"vaginal venous plexus,UBERON:0001472","The vaginal plexuses are placed at the sides of the vagina; they communicate with the uterine, vesical, and hemorrhoidal plexuses, and are drained by the vaginal veins, one on either side, into the hypogastric veins. "
+,,
+host_body_product,UBERON,https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000463
+,"cervical mucus,UBERON:0000316",A substance produced by the cervix and endocervical glands[BTO]. Thick acidic mucus that blocks the cervical os after mestruation[WP]. This 'infertile' mucus blocks spermatozoa from entering the uterus.
+,cervicovaginal mucus,"A complex fluid produced by the cervix and vagina, acting as a barrier against pathogens and playing a crucial role in reproductive health, including fertility and pregnancy"
+,"vaginal fluid,UBERON:0036243",Fluid that lines the vaginal walls that consists of multiple secretions that collect in the vagina from different glands.
+,"blood,UBERON:0000178",A fluid that is composed of blood plasma and erythrocytes.
+,"feces,UBERON:0001988",Portion of semisolid bodily waste discharged through the anus
+,"saliva,UBERON:0001836","A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions."
+,"urine,UBERON:0001088",Excretion that is the output of a kidney.
+,"milk,UBERON:0001913",An emulsion of fat globules within a fluid that is secreted by the mammary gland during lactation.
+,"tissue,UBERON:0000479","Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation."
+,,
+race,,"A social classification based primarily on physical characteristics such as skin color, facial features, or hair texture. Pick a term from the Controlled Vocabulary . Please contact us if you cannot find your term in this list. Or enter a null value term if information is not available."
+,Asian,
+,Black or African American,
+,American Indian/Alaska Native,
+,Native Hawaiian or Other Pacific Islander,
+,Middle Eastern or North African,
+,White,
+,Multi-racial,
+,Other,
+,,
+ethnicity,,"A category of people who identify with each other, usually on the basis of presumed similarities such as a common language, ancestry, history, society, culture, nation or social treatment within their residing area.   Pick a term from the Controlled Vocabulary or enter 'Not Available' if information not available."
+,Hispanic or Latino,
+,Not Hispanic or Latino,
+,,
+null value,,Terms to be used for mandatory fields when the required information is missing or does not apply.
+,Not Applicable,"For conditional mandatory fields, where conditions are not met"
+,Not Available,Information not available (unknown/missing)

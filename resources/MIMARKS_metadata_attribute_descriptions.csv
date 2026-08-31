@@ -1,0 +1,302 @@
+KEY: Mandatory(M)/Optional(X)/Conditional mandatory(C),,,,,
+Attributes,Description,Format,Examples,Mandatory/Optional/ Conditional Mandatory,Comments
+Database_Identifiers,,,,,
+project_name,Name of the project within which the sequencing was organized,,VMRC,M,
+study_name,"Name of the study, in the format of 'project_name'_'study'",project_name'_'study',VMRC_PreSSMat,M,
+bioproject_accession,The BioProject accession number assigned to your project,,PRJNAXXXXXX,X,
+File_Information,,,,,
+file_name,"Name of the file in gzipped format for reads, assemblies etc. The filename should be unique throughout.",unique identifier,20_00880_05.v4.R1.fq.gz,M,
+file_url,"Path to file in the GCP bucket, which will be populated during the ingest process. Please leave this blank.",,Leave this blank,,
+uncompressed_filesize,Size of file in bytes for uncompressed file,,,X,
+compressed_filesize,Size of file in bytes for compressed/gzipped file,,,X,
+uncompressed_file_md5,md5sum for file in uncompressed format,,,M,
+compressed_file_md5,md5sum for file in compressed/gzipped format,,,M,
+access,"Consented access level of data. Refer to the Controlled Vocabulary file.
+
+Note: This field is mandatory. Enter ‘Not Available’, if information is not available.",,open,M,
+data_use_condition,Term from the Data Use Ontology (DUO) to describe how the data is allowed to be used. Please fill this field if access level of your data is restricted or restricted_embargo. Refer to the Controlled Vocabulary file.  https://www.ebi.ac.uk/ols4/ontologies/duo,,Open data: DUO:0000004,C,Mandatory if the data access is restricted or restrcited_embargo
+file_format,File format type and EDAM ontology id. Refer to the Controlled Vocabulary file.,,"FASTQ,EDAM:format_1930",M,
+data_type,Data type of file and EDAM ontology id. Refer to the Controlled Vocabulary file.,,"Taxonomy,EDAM:data_3028",M,
+data_used_for_primary_analyses,"Whether the sequence data in the corresponding file was used for the primary analyses. This attribute is intended for multiple sequence data files generated from the same sample (e.g., repeat DNA extraction or repeat sequencing). Enter ""yes"" if the data was used. Otherwise, enter ""no - <reason>"", where reason briefly explains why the data from this file was excluded (e.g., second DNA extraction used instead, repeat sequencing data used instead, poor sequencing quality, low read depth, contamination, or other reason).",yes/no - <reason>,no - older extraction,X,
+Sample_Information,,,,,
+modality,Modality/assay information. Refer to the Controlled Vocabulary file.,,"16Samplicon, Metagenome",M,
+samp_taxonomy,"Sample taxonomy and NCBI taxonomy id information. Refer to the Controlled Vocabulary file.
+
+For Isolate genomes, provide sample taxonomy like Prevotella_bivia; for human microbial metagenomics, metatranscriptomics and 16Samplicon data, fill in as 'human vaginal metagenome,NCBI:txid1632839'.",,"Prevotella_bivia,NCBI:txid28125",C,Mandatory for Isolate Genomes
+strain,"Isolate/strain information for Isolate genomes. 
+
+Note: This field is mandatory for Isolate genomes",,,C,Mandatory for Isolate Genomes
+sample_name,"A standardized, unique identifier for each sample, formatted as 'study_name'_'source_sample_id'. The 'study_name' indicates the name of the study, and the 'source_sample_id' is the original unique identifier assigned by the lab.",study_name'_'source_sample_id',VMRC_PreSSMat_20-00145-05,M,
+source_sample_id,"A unique identifier for the sample, assigned by your lab",,20-00145-05,M,
+visit_code,A unique identifier assigned to a visit,,1000,X,
+sample_type,Specify the type of your sample. Refer to the Controlled Vocabulary file.,,biological sample,X,
+cell_line,Name of specific cell line used in your study. Refer to the Controlled Vocabulary file.,,primary vaginal epithelial cells (PVECs),C,
+cell_type,Specify the CL ontology term and ID for the cell type of your sample. Please fill this field if you have provided cell line information. Refer to the Controlled Vocabulary file. Please contact us if you need help finding CL ontology term and ID for your specific cell type.  https://www.ebi.ac.uk/ols4/ontologies/cl/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCL_0000000?lang=en,"text,CL ID","vagina squamous cell,CL:1001578",C,
+experimental_factor,"Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO terms, please see https://www.ebi.ac.uk/ols4/ontologies/efo; for a browser of OBI terms please see https://www.ebi.ac.uk/ols4/ontologies/obi","text,EFO and/or OBI ID",time series design [EFO:EFO_0001779],X,
+lat_lon,"The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in the WGS84 system. 
+
+Note: This field is mandatory. Enter ‘Not Available’, if information is not available.","decimal degrees, limit to 8 decimal points",50.586825 6.408977,M,
+geo_loc_name,"The geographical origin of the sample as defined by the country or sea name followed by specific region name. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.","country or sea name (INSDC or GAZ): region(GAZ), specific location name",USA: Maryland,M,
+site,"An identifier representing the site of study {AMANHIB = AMANHI Bangladesh, AMANHIP = AMANHI Pakistan, AMANHIT = AMANHI Tanzania, GAPPSB = GAPPS Bangladesh, GAPPSZ = GAPPS Zambia}",,GAPPSB,X,
+collection_year,Year of sample collection in the format of YYYY,year (YYYY),2025,C,
+neg_cont_type,The substance or equipment used as a negative control in an investigation,,,X,
+pos_cont_type,"The substance, mixture, product, or apparatus used to verify that a process which is part of an investigation delivers a true positive.",,,X,
+samp_collect_device,The instrument or tool used to obtain a biological or environmental sample from its source. Refer to the Controlled vocabulary file.,,swab,X,
+samp_collect_method,"Specify the technique or procedure used to obtain a sample from its source. Provide OBI ontology term and ID, if available. Refer to the Controlled Vocabulary file. Please contact us if you need help finding OBI ontology ID for the sample collection method used.
+
+https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000659?lang=en","text,OBI ID","collecting specimen with swab,OBI:0002600",X,
+samp_collect_by,Specify if the sample was collected by the participant or a clinician,,"participant, clinician",X,
+samp_collect_loc,Specify the location of sample collection,,"home, clinic, hospital",X,
+samp_storage_medium,The substance or condition in which a collected sample is stored before analysis. Refer to the Controlled Vocabulary file.,,"dry swab, nucleic acid stabilizing solution, Amies transport medium",X,
+samp_storage_method,Describe the method used to preserve and store biological samples after collection to maintain their integrity for downstream analysis.,,swab stored in DNA/RNA stabilizers and kept frozen at -80 degrees celsius ;  in sterile transport medium at 4 degrees celsius;  air-dried cytobrush stored in a sterile container,X,
+samp_store_temp,"Temperature at which sample was stored, e.g. -80 degree Celsius",,-80 degree Celsius,X,
+samp_store_loc,"Location at which sample was stored, usually name of a specific freezer/room",,Freezer no:5,X,
+samp_store_dur,Duration for which the sample was stored,,P1Y6M,X,
+salinity,"The total concentration of all dissolved salts in a liquid or solid sample. While salinity can be measured by a complete chemical analysis, this method is difficult and time consuming. More often, it is instead derived from the conductivity measurement. This is known as practical salinity. These derivations compare the specific conductance of the sample to a salinity standard such as seawater.",,25 practical salinity unit,X,
+oxy_stat_samp,Oxygenation status of sample,,aerobic,X,
+ref_biomaterial,"Primary publication if isolated before genome publication; otherwise, primary genome report.","PMID, DOI or URL",doi:10.1016/j.syapm.2018.01.009,X,
+source_mat_id,"A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).",for cultures of microorganisms: identifiers for two culture collections; for other material a unique arbitrary identifer,MPI012345,C,Mandatory for culture collection
+rel_to_oxygen,"Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments",,aerobe,X,
+samp_mat_process,"A brief description of any processing applied to the sample during or after retrieving the sample from environment, or a link to the relevant protocol(s) performed.",,storing samples in ethanol,X,
+size_frac,Filtering pore size used in sample preparation,,0-0.22 micrometer,X,
+samp_size,"The total amount or size (volume (ml), mass (g) or area (m2) ) of sample collected.",,5 liter,X,
+samp_vol_we_dna_ext,Volume (ml) or mass (g) of total collected sample processed for DNA extraction. Note: total sample collected should be entered under the term samp_size.,,1500 milliliter,X,
+nucl_acid_ext,"A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample","PMID, DOI or URL",https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf,X,
+sample_DNA_extracted_twice,"Whether the original biological sample underwent more than one DNA extraction (e.g., due to insufficient DNA yield, poor DNA quality, or repeat extraction).",yes/no,no,X,
+same_DNA_extraction_sequenced_twice,"Whether the same DNA extract from the biological sample was sequenced more than once (e.g., re-sequencing to increase sequencing depth or replace a failed sequencing run).",yes/no,no,X,
+nucl_acid_amp,"A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids","PMID, DOI or URL",https://phylogenomics.me/protocols/16s-pcr-protocol/,X,
+lib_size,Total number of clones in the library prepared for the project,,50,X,
+lib_reads_seqd,Total number of clones sequenced from the library,,20,X,
+lib_layout,"Specify whether to expect single, paired, or other configuration of reads",,paired,X,
+lib_vector,Cloning vector type(s) used in construction of libraries,,Bacteriophage P1,X,
+lib_screen,Specific enrichment or screening methods applied before and/or after creating libraries,,"enriched, screened, normalized",X,
+target_gene,"Targeted gene or locus name for marker gene studies
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.",,"16S rRNA, 18S rRNA, ITS, nif, amoA, rpo",M,MIMARKS-specific attribute
+target_subfragment,"Name of subfragment of a gene or locus. Important to e.g. identify special regions on marker genes like V6 on 16S rRNA.
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.",,"V6, V9, ITS1, ITS2",M,MIMARKS-specific attribute
+pcr_primers,"PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters.
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.",,FWD:GTGCCAGCMGCCGCGGTAA;REV:GGACTACHVGGGTWTCTAAT,M,MIMARKS-specific attribute
+mid,"Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters",multiplex identifier sequence,GTGAATAT,C,
+adapters,Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters,adapter A and B sequence,AATGATACGGCGACCACCGAGATCTACACGCT; CAAGCAGAAGACGGCATACGAGAT,X,
+pcr_cond,Description of reaction conditions and components of PCR in the form of 'initial denaturation:94degC_1.5min; annealing=...',,initial denaturation:94degC_1.5min,X,MIMARKS-specific attribute
+omics_technique,"Provide the name and OBI id of the specific method or technology used to generate omics data. Refer to the Controlled Vocabulary file.
+https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000070?lang=en 
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.","text,OBI ID","amplicon sequencing assay,OBI:0002767",M,
+device,"Name and OBI id of the device(s) used. Refer to the Controlled Vocabulary file. If more than one device was used, list them separated by a semicolon (‘;’).
+
+Where possible, the term should be taken from the OBI list of DNA sequencers https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0400103?lang=en 
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.","text,OBI ID","PacBio Sequel II,OBI:0002633",M,
+seq_quality_check,"Indicate if the sequence has been called by automatic systems (none) or undergone a manual editing procedure (e.g. by inspecting the raw data or chromatograms). Applied only for sequences that are not submitted to SRA,ENA or DRA",,none,C,MIMARKS-specific attribute
+chimera_check,"Tool(s) used for chimera checking, including version number and parameters, to discover and remove chimeric sequences. A chimeric sequence is comprised of two or more phylogenetically distinct parent sequences.",,uchime;v4.1;default parameters,C,MIMARKS-specific attribute
+assembly_software,"Tool(s) used for assembly, including version number and parameters","name and version of software, parameters used","metaSPAdes;3.11.0;kmer set 21,33,55,77,99,121; default parameters otherwise",X,
+organism_count,"Total cell count of any organism (or group of organisms) per gram, volume or area of sample, should include name of organism followed by count. The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) should also be provided. ",organism name;measurement value,total prokaryotes; 3.5e7 cells per ml; qpcr,X,
+host_symbiont,"The taxonomic name of the organism(s) found living in mutualistic, commensalistic, or parasitic symbiosis with the specific host. The sampled symbiont can have its own symbionts. For example, parasites may have hyperparasites (=parasites of the parasite).",species name or common name,"Platyhelminthes,NCBI:txid6157",X,
+community_type,Community type of vaginal microbiome,,"NonLactobacillus, Lcrispatus, Liners, Lgasseri, Ljensenii",X,
+community_state_type,Community state type of vaginal microbiome - a snapshot of the community at the time of sampling (i.e. state type),"I,II,III,IV,V",I,X,
+subCST,Sub-community state type of vaginal microbiome,,I-A,X,
+stability_cat,Community stability category based on microbiome composition (Stable/Unstable),Stable/Unstable,Stable,X,
+stability_value,Community stability value based on microbiome composition,,0.72591778,X,
+timepoint_sequential,"For longitudinal studies, indicate the order in which samples were collected from the same subject and body site. Each sample should be assigned a sequential number (e.g., 1, 2, 3) based on the order of collection. This field helps track the progression of sample collection, and it is recommended to use this field in conjunction with timepoint_numeric, which records the actual time intervals between sample collections.","1,2,3,4,5",1,C,Recommended for longitudinal studies
+timepoint_numeric,"For longitudinal studies, specify the time elapsed from the start of the experiment till the sample collection. This value should be recorded as an integer, with the corresponding unit specified separately in timepoint_numeric_units (e.g., if the timepoint is “20 weeks”, enter timepoint_numeric = 20 and timepoint_numeric_units = weeks). This field provides a precise measure of the time elapsed since the start of the experiment and should be used in conjunction with timepoint_sequential, which tracks the order of sample collection.",,20,C,Recommended for longitudinal studies
+timepoint_numeric_units,"The unit of measurement associated with timepoint_numeric, in the format of hours, days, weeks, months etc.",,weeks,C,Recommended for longitudinal studies
+nugent_score,Nugent score in the range of 0-10; The Nugent Score is a Gram stain scoring system for vaginal swabs to diagnose bacterial vaginosis.,0-10,7,X,
+nugent_class,"Based on the Nugent score , provide the Nugent class.
+
+0-3 - negative for BV (NO_BV),
+4-6 - indeterminate for bacterial vaginosis (INTER_BV) ,
+7-10 - indicative of BV (BV); indicative of the absence of lactobacilli and a relative predominance of G. vaginalis and Mobiluncus spp","NO_BV, INTER_BV, BV",BV,X,
+associated_resource,"A related resource that is referenced, cited, or otherwise associated to the sequence.",,https://www.earthmicrobiome.org/,X,
+sop,"Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences",,https://earthmicrobiome/protocols-and-standards/its/,X,
+Enrollment_Information,,,,,
+date_lmp,Date of LMP (Last Menstrual Period) in the format of YYYY-MM-DD,date in YYYY-MM-DD,2025-01-01,X,
+date_usg,"Date on which the USG-based dating of pregnancy was done, in the format of YYYY-MM-DD",date in YYYY-MM-DD,2025-01-01,X,
+vdt_enr,"Date of enrollment, in the format of YYYY-MM-DD",date in YYYY-MM-DD,2025-01-01,X,
+pregnancy,"Date due of pregnancy,calculated at the time of enrollment in the format of YYYY-MM-DD",date in YYYY-MM-DD,2025-01-01,X,
+Subject_Information,,,,,
+host_taxon,Name and NCBI taxon ID of the host from which the sample was obtained. Refer to the Controlled Vocabulary file,"text,NCBI Taxonomy ID","Homo sapiens,NCBI:txid9606",M,
+source_subject_id,"A unique identifier for the subject, assigned by your lab",unique identifier,20-100010,M,
+host_subject_id,"A unique identifier by which each subject can be referred to, de-identified. Recommended format: 'study_name'_'source_subject_id'. If unknown, choose 'Not Available' from the pick list.",study_name'_'source_subject_id',VMRC_PreSSMat_20-100010,M,
+pregnancy_status,Pregnancy status of the host -  pregnant or not pregnant,text,pregnant,M,
+pregnancy_id,A numerical identifier representing the sequence number of a current pregnancy. This identifier starts at 1 for the first pregnancy and increments by 1 for each subsequent pregnancy.,numerical identifier,1,X,
+host_age,"Age of host,in years, at the time of sampling",,25,X,
+host_sex,"Gender or physical sex of the host.
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.",,F,M,
+host_body_site,"UBERON term and ID of the body site from where the sample was obtained. Refer to the Controlled Vocabulary file.
+
+For Uber-anatomy ontology (UBERON)terms, please see https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0003134?lang=en ","text,UBERON ID","vagina,UBERON:0000996",C,
+host_body_product,UBERON term and ID of the substance produced by the body from which the sample was obtained. Pick a term from the controlled vocabulary. Please contact us if you need help finding UBERON ontology ID. https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000463,"text,UBERON ID","vaginal fluid,UBERON:0036243",X,
+host_diet,"Type of diet depending on the host, eg: high-fat, mediterranean etc.; can include multiple diet types",,high-fat,X,
+host_last_meal,Content of last meal and time since feeding; can include multiple values,content;time interval,french fries;P5H30M,X,
+host_family_relation,Relationships to other hosts in the same study; can include multiple relationships,relationship type;arbitrary identifier,mother;ID298,X,
+host_genotype,Observed genotype,genotype,ST1,X,
+host_phenotype,"Phenotype of human or other host. For phenotypic quality ontology (pato) (v 2018-03-27) terms, please see http://purl.bioontology.org/ontology/pato. For Human Phenotype Ontology (HP) (v 2018-06-13) please see http://purl.bioontology.org/ontology/HP",PATO or HP,Tinnitus [HP:0000360],X,
+sexual_act,Current sexual partner and frequency of sex,partner sex;frequency,,X,
+douche,Date of most recent douche in the format of YYYY-MM-DD,date in YYYY-MM-DD,2025-01-01,X,
+birth_control,Specification of birth control medication used,,,X,
+menopause,Date of onset of menopause in the format of YYYY-MM-DD,date in YYYY-MM-DD,2025-01-01,X,
+hrt,"Whether subject had hormone replacement therapy, and if yes, provide start date in the format of YYYY-MM-DD","yes/no ; if yes, date in YYYY-MM-DD",yes;2025-01-01,X,
+hysterectomy,Specification of whether hysterectomy was performed,yes/no,no,X,
+Subject_Anthropometry,,,,,
+vaginal_pH,The pH level of vagina,,4.4,X,
+host_tot_mass,Total mass of the host at sample collection (in kilogram),kilogram,65,X,
+host_height,The height of subject (in meter),meter,1.75,X,
+host_body_mass_index,"Body mass index, calculated as weight/(height)squared (in kilogram per square meter)",kilogram per square meter,22,X,
+host_pulse,"Resting pulse, measured as beats per minute",beats per minute,65,X,
+sbp,Systolic blood pressure of the participant at current antenatal visit,millimeter mercury,90,X,
+dbp,Diastolic blood pressure of the participant at current antenatal visit,millimeter mercury,60,X,
+Subject_Bloodwork,,,,,
+hemo,Measurement of hemoglobin concentration,measurement value in g/dL,,X,
+hba1c,Hemoglobin A1c measurement,%,,X,
+crp,C-reactive protein measurement,mg/dL (1.0-3.0),,X,
+agp,alpha-1-acid glycoprotein measurement,mg/dL (0.6-1.2),,X,
+ca,plasma total calcium concentration measurement,mg/dL (9.0-10.5),,X,
+fer,blood ferritin measurement,ng/mL or ug/L (male:12-300; female:12-150),,X,
+bun,serum urea nitrogen measurement,mg/dL (7-20),,X,
+scr,serum creatinine measurement,mg/dL (male:0.6-12; female:0.5-1.1),,X,
+ast,serum glutamic-oxaloacetic transaminase measurement,IU/L (10-40),,X,
+alb,serum albumin measurement,g/dL (3.4-5.4),,X,
+tsh,Thyroid-Stimulating Hormone measurement,ug/L (0.4-4.0),,X,
+rpr,rapid plasma reagin measurement,postive/negative,,X,
+sflt,soluble fms-like tyrosine kinase-1 measurement,pg/mL or ng/L,,X,
+plgf,placental growth factor,pg/mL or ng/L,,X,
+pappa,pregnancy-associated plasma protein-A measurement,MoM or IU/L,,X,
+vegf,vascular endothelial growth factor,pg/mL or ng/L,,X,
+Subject_Medical_History,,,,,
+HIV_status,"Result of HIV serological test (0 - uninfected; 1 - infected; 2 - infected,viral_load positive)","0,1,2",0,X,
+malaria,Result of malaria test conducted by RDT or smear (0: non-reactive; 1: reactive; 2: indeterminate),"0,1,2",0,X,
+chron_htn,If the participant has a history of hypertension outside of pregnancy (0 = no; 1 = yes),"0,1",0,X,
+htn_visit,If the participant had hypertension during the entire pregnancy (0 = no; 1 = yes),"0,1",0,X,
+diabetes,If the participant has a history of diabetes outside of pregnancy (0 = no; 1 = yes),"0,1",0,X,
+tb,If the participant has a history of tuberculosis (0 = no; 1 = yes),"0,1",0,X,
+thyroid,If the participant has a history of hyper- or hypo-thyroidism (0 = no; 1 = yes),"0,1",0,X,
+epilepsy,If the participant has a history of eplilepsy (0 = no; 1 = yes),"0,1",0,X,
+host_disease_stat,List of diseases with which the host has been diagnosed; can include multiple diagnoses. The terms should be chosen from the DO (Human Disease Ontology) at https://www.disease-ontology.org.,disease name or Disease Ontology term,measles [DOID:8622],X,
+ihmc_medication_code,Can include multiple medication codes,IHMC code,810,X,
+chem_administration,"List of chemical compounds administered to the host or site where sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can include multiple compounds. For chemical entities of biological interest ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi",CHEBI;timestamp,agar [CHEBI:2509];2018-05-11T20:00Z,X,
+host_body_temp,Core body temperature of the host when sample was collected  (in degree Celsius),degree Celsius,36.5,X,
+medic_hist_perform,Whether full medical history was collected,yes/no,yes,X,
+perturbation,"Type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with perturbation regimen including how many times the perturbation was repeated, how long each perturbation lasted, and the start and end time of the entire perturbation period; can include multiple perturbation types",perturbation type name;perturbation interval and duration,antibiotic addition;R2/2018-05-11T14:30Z/2018-05-11T19:30Z/P1H30M,X,
+gynecologic_disord,"History of gynecological disorders; can include multiple disorders. The terms should be chosen from the DO (Human Disease Ontology) at http://www.disease-ontology.org, female reproductive system disease (https://disease-ontology.org/?id=DOID:229).",DOID term(s) for disorder(s),,X,
+urogenit_disord,"History of urogenital disorders, can include multiple disorders. The terms should be chosen from the DO (Human Disease Ontology) at http://www.disease-ontology.org, reproductive system disease (https://disease-ontology.org/?id=DOID:15) or urinary system disease (https://disease-ontology.org/?id=DOID:18).",DOID term(s) for disorder(s),,X,
+sniff_toba,If the participant has ever sniffed or chewed tobacco (0=Never; 1=Quit pre-pregnancy; 2=Quit during pregnancy; 3=Currently sniffing/chewing),"0,1,2,3",1,X,
+sniff_freq,"If the participant has ever sniffed or chewed tobacco, the frequency per week",,,X,
+smoke_hist,Smoking history of the participant (0= Never smoke; 1= Smoked but quit before pregnancy; 2= Quit during pregnancy; 3= Currently smoking),"0,1,2,3",1,X,
+passive_smok,If the participant has lived or currently lives with people who smoke in an enclosed area/room in their presence.(0 = no; 1 = yes),"0,1",1,X,
+alcohol,"If the participant drinks alcohol (0=Never; 1=Yes, quit pre-pregnancy; 2=Yes, quit during pregnancy; 3=Currently drinking)","0,1,2,3",1,X,
+alcohol_freq,"If the participant drinks alcohol, the average number of units consumed per week (1 unit = small glass (125 ml) of wine or one bottle/can (330 ml) of beer)",,,X,
+vag_bleed,If any vaginal bleeding reported by the participant since last visit(0 = no; 1 = yes),"0,1",0,X,
+swell_ankle,If any swelling in the ankle of the participant(0 = no; 1 = yes),"0,1",0,X,
+syphilis,Result of Syphilis testing at enrollment (0 = non-reactive/negative; 1 = reactive/positive; 2 = indeterminate),"0,1,2",0,X,
+udip_prot,Semiquantitative urine test strip analysis (0 = neg; 1 = trace; 2 = positive),"0,1,2",1,X,
+Subject_Obstetric_History,,,,,
+gravidity,"Total number of times the participant has been pregnant, including the current pregnancy",,3,X,
+parity,Number of pregnancies the participant has carried to at least 24 weeks,,2,X,
+prev_mis,Number of previous pregnancies the participant has had that ended before 6 months,,1,X,
+prev_sb,If the participant has ever had stillbirth at a previous delivery (0 = no; 1 = yes),"0,1",1,X,
+prev_sb_no,Number of previous deliveries the participant has had of a stillborn child,,1,X,
+prev_lb,Number of deliveries the participant has had of a live child,,2,X,
+prev_ptb,If the participant has ever had a baby that was born preterm (<37 weeks GA)(0 = no; 1 = yes),"0,1",1,X,
+prev_ptb_no,Number of previous pregnancies the pariticipant has had that ended before term  (<37 weeks GA),,1,X,
+prev_ptb_multi,Number of previous pre-term births  (<37 weeks GA) in which the participant had more than 1 baby,,0,X,
+prev_multip,If the participant delivered twins or triplets in any of her previous pregnancies(0 = no; 1 = yes),,0,X,
+prev_cs,If the participant had a caesarean section in any of the previous pregnancies(0 = no; 1 = yes),"0,1",0,X,
+alive_child,Number of living children the participant has,,2,X,
+birth_interval,Interval between the participant's previous pregnancy outcome and the last menstrual period for the current pregnancy.,in months,18,X,
+Socioeconomic_Determinants,,,,,
+race,"A social classification based primarily on physical characteristics such as skin color, facial features, or hair texture. Refer to the Controlled Vocabulary file.
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.",,"Asian,Black or African American",M,
+source_race,"The race information of the participant, as reported by the lab or participant , to preserve the original terminology used during data collection",,"Asian or South Asian, African",X,
+ethnicity,"A category of people who identify with each other, usually on the basis of presumed similarities such as a common language, ancestry, history, society, culture, nation or social treatment within their residing area. 
+
+Note: This field is mandatory. Pick a term from the Controlled Vocabulary or enter 'Not Available' if information is not available.",,Not Hispanic or Latino,M,
+host_occupation,Occupation of the participant (0 = not employed; 1 = employed),,0,X,
+host_education,Total number of years of completed schooling/education of the participant,,10,X,
+hus_education,Total number of years of completed schooling /education of the participant's husband,,10,X,
+fmly_memb,"Number of family members who share the same kitchen, usually sleeping under the same roof or spending from the same purse",,7,X,
+typ_house,"Type of house the participant resides in :
+
+1 - Pucca: Floor= Finished/cement; Roof= slate/tile/asbestos; Walls= cement/finished; 
+
+2 - Kutcha: Floor= Mud/clay/rudimentary; Roof= Thatch/mud Walls= Mud/rudimentary
+","1,2",1,X,
+rooms_house,Number of rooms in the participant's home that are used for sleeping,,3,X,
+hh_electricity,If the participant's household has electricity supply (0 = no; 1 = yes),"0,1",1,X,
+fuel_for_cook,"Type of fuel primarily used for cooking in the participant's household
+
+(1=Gas(anytype), 2=Kerosene, 3=Coal/Charcoal, 4=Wood/Straw/Grass, 5= Electricity)","1,2,3,4,5",4,X,
+drinking_source,"Main source of drinking water for members of the participant's household
+
+(1=Piped/Bottle Water/Tanker Truck, 2=Tubewell(anytype), 3=Rain Water, 4=Surface Water(River,Pond,etc.))","1,2,3,4",2,X,
+toilet,"Type of toilet facilities typically used by members of the participant's household
+
+(1=Flush/Pour/Composting, 2=Pit/Dry/Hanging, 3=Bucket, 4=No toilet(Open space, bush, etc.))","1,2,3,4",1,X,
+wealth_index,"Wealth Index (quintiles) calculated from assets data using PCA
+
+(1 = poorest, 2 = Poor, 3=Middle, 4=Rich, 5=Richest)","1,2,3,4,5",3,X,
+GA_Measurements_And_Labour_Variables,,,,,
+gestational_age_intg,Gestational age assessed using INTERGROWTH-21st formula.,value,11.71428571,X,
+gestational_age_hdlk,Gestational age assessed using Hadlock formula.,value,11.85714286,X,
+gestational_age_lmp,Gestational age calculated from the date of last normal menstrual period,value,27.71428571,X,
+spont_labour,"If labour initiated on its own (spontaneous) or was it initiated by a provider
+
+(1 = spontaneous labour onset; 2 = induced or provider initiated labour)","1,2",1,X,
+labour_aug,If  labour was augmented with oxytocin (0 = no; 1 = yes),"0,1",0,X,
+labour_fever,If the participant had a fever in labour (0 = no; 1 = yes),"0,1",0,X,
+labour_htn,If the participant had a diagnosis of hypertension during labour (0 = no; 1 = yes),"0,1",1,X,
+fundal_height,Symphysis-fundal height at AN visits,in cm,,X,
+crl,Crown- rump length of fetus (if gestation is < 14 weeks),cm code “” or [.],,X,
+hc,Head circumference of fetus (if gestation is >=14 weeks),cm code “” or [.],,X,
+ac,Abdominal circumference of fetus (if gestation is >=14 weeks),cm code “” or [.],,X,
+bpd,Bi-parietal diameter of fetus (if gestation is >=14 weeks),cm code “” or [.],,X,
+fl,Femur length of fetus  (if gestation is >=14 weeks),cm code “” or [.],,X,
+num_fetus,Number of fetuses as identified in the scan,numerical value,1,X,
+fetal_anomalies,If any fetal anomalies were detected during pregnancy (0 = no; 1 = yes),"0,1",0,X,
+Delivery_Variables,,,,,
+erly_ptb,If participant had early preterm birth (baby born between 24 and 34 weeks)  (0 = no; 1 = yes),"0,1",0,X,
+sPTB/preterm,Delivery status if participant had preterm birth (0 : >37wks; 1 : <37wks; 2 : HIV&<37wks),"0,1,2",1,X,
+GAGE_BRTH,Harmonized value for gestational age at birth,value,35.58714286,X,
+gestational_age,"Gestational age at delivery, presented in ‘week.day’ format. For instance, 12.0 would indicate the 12th week and 0 days, while 11.6 would signify 11 weeks and 6 days (where 0 represents the first day of the week).",value,35.5,X,
+del_date,Date of delivery in the format of YYYY-MM-DD,date in YYYY-MM-DD,2025-01-01,X,
+del_mode,Mode of delivery (1 = vaginal; 2 = cesarean),"1,2",1,X,
+del_time,Time of delivery,TIME,,X,
+delivery_place,Place of delivery (1=Facility(hospital); 2=Home(residence)),"1,2",1,X,
+delivery_condby,"If delivery was conducted by a trained or untrained birth attendant 
+(1= Trained birth attendant; 2= Untrained birth attendant)
+","1,2",1,X,
+labour_24,If more than 24 hours transpired between onset of labour pains and delivery (0 = no; 1 = yes),"0,1",0,X,
+rom_24,If more than 24 hours transpired between membrane rupture and delivery  (0 = no; 1 = yes),"0,1",0,X,
+liquor_clear,If liquor was clear (0 = no; 1 = yes),"0,1",1,X,
+preg_outcome,Outcome of pregnancy  (0= Abortion; 1= Live birth; 2= Stillbirth),"0,1,2",1,X,
+single_twin,Number of babies in this pregnancy at the time of delivery (1= Singleton; 2= twin; Rest can follow through),"1,2,3,4,5",1,X,
+birth_outcome,Outcome of delivery (1= live birth; 2=stillbirth),"1,2",1,X,
+mat_death,If the participant died during pregnancy or within 42 days of delivery (0 = no; 1 = yes),"0,1",0,X,
+mat_death_date,Date of death of the participant in the format of YYYY-MM-DD,date in YYYY-MM-DD,,X,
+pph,If the participant had postpartum hemorrhage (0 = no; 1 = yes),"0,1",0,X,
+cong_anomalies,If any congenital anomalies were detected at delivery (0 = no; 1 = yes),"0,1",0,X,
+Baby_Anthropometry,,,,,
+baby_id,A unique identifier assigned to each baby born to the participant,unique identifier,GAPPSB-400004-1,X,
+baby_sex,Sex of the baby (1= Male; 2= Female),"1,2",1,X,
+birth_weight,Weight of the baby at birth,in Grams,4000,X,
+hc_birth,Head circumference of the baby at birth,cm  code “” or [.],46.7,X,
+length_birth,Length of the baby at birth,cm  code “” or [.],52,X,
+muac_birth,Mid–upper arm circumference (MUAC) of the baby at birth,cm  code “” or [.],9,X,
+sga_10,Is the baby small for gestational age at 10th percentile cutoff?  (0 = no; 1 = yes),"0,1",0,X,
+sga_3,Is the baby small for gestational age at 3rd percentile cutoff?  (0 = no; 1 = yes),"0,1",0,X,
+bwt_centile,Birth weight percentile for population,%,90,X,
+Contributor_Acknowledgement,,,,,
+contributors,"Names of individuals contributing to the processes of sample collection,sequence generation, analysis, and data submission.Include the first and last names of all individuals that should be attributed, separated by a comma.
+
+Note: This field is mandatory. Enter ‘Not Available’, if information is not available.",,"Tejinder Singh, Fei Hu, Joe Blogs",M,
+contact_PI,"Name of the principal investigator (PI) to contact for additional information about the study or dataset
+
+Note: This field is mandatory. Enter a null value term from the Controlled Vocabulary file, if information is not available.",,Tejinder Singh,M,
+DataHarmonizer provenance,The DataHarmonizer software and template version provenance.,,Leave this blank,,"The current software and template version information will be automatically generated in this field after the user utilizes the ""validate"" function of the DataHarmonizer tool. This information will be generated regardless as to whether the row is valid or not."
