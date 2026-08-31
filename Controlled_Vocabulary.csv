@@ -1,12 +1,11 @@
 Attribute,CV terms,Definition
 access,,"Consented access level of data. 
 
-Note: This field is mandatory. Enter Not Available, if information is not available."
+Note: This field is mandatory. Enter 'Not Available', if information is not available."
 ,open,Data and metadata can be freely shared publicly immediately.
 ,open_embargo,Data and metadata can be freely shared publicly after a stated embargo period ends.
 ,restricted,Data and metadata can be shared with individuals who have been approved for access
 ,restricted_embargo,"Data and metadata can be shared with individuals who have been approved for access after a stated embargo period ends. During the embargo period, individuals outside the project will not be able to request access."
-,,
 ,,
 data_use,DUO,https://www.ebi.ac.uk/ols4/ontologies/duo
 ,"Open, no restriction: DUO:0000004",This data use permission indicates there is no restriction on use.
@@ -39,7 +38,6 @@ file_format,EDAM,https://www.ebi.ac.uk/ols4/ontologies/edam/classes/http%253A%25
 ,"MTX,EDAM:format_3916",The Matrix Market matrix (MTX) format stores numerical or pattern matrices in a dense (array format) or sparse (coordinate format) representation.
 ,"R file format,EDAM:format_3554","File format used for scripts written in the R programming language for execution within the R software environment, typically for statistical computation and graphics."
 ,"VCF,EDAM:format_3016",Variant Call Format (VCF) is tabular format for storing genomic sequence variations. 
-,,
 ,,
 data_type,EDAM,https://www.ebi.ac.uk/ols4/ontologies/edam/classes/http%253A%252F%252Fedamontology.org%252Fdata_0006?lang=en
 ,"DNA sequence,EDAM:data_3494",A DNA sequence.
@@ -79,7 +77,6 @@ modality,in-house custom,Name of data modality used to categorize data at a high
 ,Epigenome-ChIP-seq,"Sequencing of regions of DNA that bind to transcription factors and other proteins, through chromatin immunoprecipitation"
 ,Multimodal,"A sequencing or analysis approach that integrates multiple types of molecular data (e.g., RNA, protein, chromatin accessibility) from the same sample or single cell to provide a more comprehensive understanding of biological processes. (e.g., scRNA-Seq + ATAC-Seq)"
 ,Spatial_transcriptome,"A technique that combines gene expression profiling with spatial information to map RNA molecules within intact tissues, preserving the spatial context of gene expression."
-,,
 ,,
 samp_taxonomy,NCBI Taxonomy,https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
 ,"human vaginal metagenome,NCBI:txid1632839",human vaginal metagenome
@@ -155,18 +152,11 @@ samp_taxonomy,NCBI Taxonomy,https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax
 ,"Atopobium vaginae,NCBI:txid82135",NCBI Taxonomy term and id
 ,"mouse vaginal metagenome,NCBI:txid1549736","vaginal metagenome (NCBI does not have mouse-specific term, we have requested one)"
 ,,
-sample_type,UBERON,https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000463
-,"cervical mucus,UBERON:0000316",A substance produced by the cervix and endocervical glands[BTO]. Thick acidic mucus that blocks the cervical os after mestruation[WP]. This 'infertile' mucus blocks spermatozoa from entering the uterus.
-,cervicovaginal mucus,"A complex fluid produced by the cervix and vagina, acting as a barrier against pathogens and playing a crucial role in reproductive health, including fertility and pregnancy"
-,"vaginal fluid,UBERON:0036243",Fluid that lines the vaginal walls that consists of multiple secretions that collect in the vagina from different glands.
-,"blood,UBERON:0000178",A fluid that is composed of blood plasma and erythrocytes.
-,"feces,UBERON:0001988",Portion of semisolid bodily waste discharged through the anus
-,"saliva,UBERON:0001836","A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions."
-,"urine,UBERON:0001088",Excretion that is the output of a kidney.
-,"milk,UBERON:0001913",An emulsion of fat globules within a fluid that is secreted by the mammary gland during lactation.
-,"tissue,UBERON:0000479","Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation."
+sample_type,,Specify the type of your sample. Pick a term from the Controlled Vocabulary. Please contact us if you cannot find your term in this list.
+,biological sample,A biological specimen collected from a subject for experimental analysis.
+,positive control,A reference sample expected to produce positive result under correct testing conditions.
+,negative control,A reference sample expected to yield a null or negative result
 ,isolate culture,A material entity that represents a pure microbial population obtained through a culturing process from a biological or environmental specimen.
-,,
 ,,
 cell_line,,Name of specific cell line used in your study. Pick a term from the Controlled Vocabulary. Please contact us if you cannot find your term in this list.
 ,primary cell lines,Derived directly from tissues
@@ -177,7 +167,6 @@ cell_line,,Name of specific cell line used in your study. Pick a term from the C
 ,End1/E6E7 (Endocervical Epithelial Cell Line),Immortalized endocervical epithelial cell line
 ,Ect1/E6E7 (Ectocervical Epithelial Cell Line) ,Immortalized ectocervical epithelial cell line
 ,CaSki & HeLa (Cervical Cancer Cell Lines),cell lines primarily used in cervical cancer research
-,,
 ,,
 cell_type,Cell Ontology (CL),https://www.ebi.ac.uk/ols4/ontologies/cl
 ,"vagina squamous cell,CL:1001578",Squamous cell of vaginal epithelium
@@ -191,7 +180,6 @@ cell_type,Cell Ontology (CL),https://www.ebi.ac.uk/ols4/ontologies/cl
 ,"columnar cell of endocervix,CL:0002152",A simple columnar epithelial cell located in the endocervix.
 ,"uterine cervix squamous cell,CL:1001575",Squamous cell of uterine cervix epithelium.
 ,,
-,,
 samp_collect_device,,The instrument or tool used to obtain a biological or environmental sample from its source.
 ,swab,A small piece of absorbent material used to collect samples from the body
 ,brush,"A specialized medical tool, often with bristles or a flexible head, used to collect cells or tissue samples from various body areas for diagnostic or research purposes"
@@ -204,16 +192,24 @@ samp_collect_device,,The instrument or tool used to obtain a biological or envir
 ,thin needle,"A fine, hollow needle used for minimally invasive sampling, to collect cells or fluid from tissues for diagnostic analysis."
 ,biopsy punch tool,"A circular blade instrument used to remove small, cylindrical tissue samples for histopathological examination, commonly used for skin, cervical, or vaginal biopsies."
 ,,
-,,
 samp_collect_method,Ontology for BioMedical Investigations (OBI),https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000659?lang=en
 ,"collecting specimen with swab,OBI:0002600","A specimen collection process that uses a swab as the collection device. A swab is an absorbent material (e.g. cotton) on a rod (e.g., wooden stick)."
 ,"biopsy,OBI:0002650",A specimen collection that obtains a sample of tissue or cell from a living multicellular organism body for diagnostic purposes by means intended to be minimally invasive.
 ,"skinpunch biopsy,OBI:0002663","A biopsy that involves the collection of a cylinder of skin (including epidermis, dermis and superficial fat) using a punch tool."
 ,"needle biopsy,OBI:0002654",A biopsy that uses a hollow needle to extract cells.
 ,"surgical biopsy,OBI:0002657",A biopsy involving a surgical incision into an organism to access the biopsy material.
+,"lavage,OBI:0600044",A protocol application to separate cells and/or cellular secretions from an anatomical space by the introduction and removal of fluid
 ,cervicovaginal lavage,"A procedure where a liquid is instilled into the vaginal and ectocervical mucosal surfaces, then reaspirated from the posterior fornix, to collect a sample for analysis, offering a more comprehensive assessment than swabs. 
 "
 ,,
+samp_collect_by,,If the sample was collected by the participant or a clinician
+,participant,
+,clinician,
+,,
+samp_collect_loc,,Location of sample collection
+,home,
+,clinic,
+,hospital,
 ,,
 samp_storage_medium,,The substance or condition in which a collected sample is stored before analysis. Pick a term from the Controlled Vocabulary.
 ,dry brush,A sample storage method where collected sample remains on a dry brush.
@@ -223,7 +219,6 @@ samp_storage_medium,,The substance or condition in which a collected sample is s
 ,Amies transport medium,"A buffered semi-solid medium that preserves microbial viability, commonly used for bacterial culture transport."
 ,Liquid-Based Cytology (LBC) Medium,"A liquid preservative used for collecting and storing cells for cytological examination, such as Pap tests or other diagnostic screenings."
 ,liquid nitrogen,"An ultra-low-temperature storage medium (-196°C) used for freezing and preserving biological samples, including cells, tissues, and genetic material, for long-term storage."
-,,
 ,,
 omics_technique,Ontology for BioMedical Investigations (OBI),"The specific method or technology used to generate omics data. Provide OBI ontology term and ID, if available. 
 
@@ -256,7 +251,6 @@ https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolib
 ,Smart-seq v4,"A plate-based full-length single-cell RNA sequencing (scRNA-seq) assay that utilizes SMART (Switching Mechanism at the 5' end of RNA Template) technology to provide highly sensitive and accurate transcriptome profiling from individual cells, capturing entire transcripts for isoform-level analysis."
 ,SPLiT-seq,Split Pool Ligation-based Transcriptome sequencing(SPLiT-seq) is a single-cell RNA sequencing technique that uses combinatorial barcoding through multiple rounds of split-pool processing to label RNA from thousands of individual cells without the need for physical isolation or microfluidics.
 ,,
-,,
 device,Ontology for BioMedical Investigations (OBI),https://www.ebi.ac.uk/ols4/ontologies/obi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000968?lang=en
 ,"PacBio Sequel,OBI:0002632","A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation with long reads and high consensus accuracy, and manufactured by the Pacific Biosciences corporation"
 ,"PacBio Sequel II,OBI:0002633","A DNA sequencer built upon single molecule real-time sequencing technology, optimized for generation of highly accurate (""HiFi"") long reads, and which is manufactured by the Pacific Biosciences corporation."
@@ -266,7 +260,7 @@ device,Ontology for BioMedical Investigations (OBI),https://www.ebi.ac.uk/ols4/o
 ,"Illumina Genome Analyzer II,OBI:0000703",A DNA sequencer which is manufactured by Illumina (Solexa) corporation. It supports sequencing of single or paired end clone libraries relying on sequencing by synthesis technology
 ,"Genome Analyzer IIe,OBI:0002027","An Illumina Genome Analyzer II which is manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology. The Genome Analyzer IIe makes industry-leading next-generation sequencing technology accessible to more laboratories"
 ,"Genome Analyzer IIx,OBI:0002000","An Illumina Genome Analyzer II which is manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology. The Genome Analyzer IIx is the most widely adopted next-generation sequencing platform and proven and published across the broadest range of research applications"
-,"MiSeq,OBI:0002003","A DNA sequencer which is manufactured by the Illumina corporation. Built upon sequencing by synthesis technology, the machine provides an end-to-end solution (cluster generation, amplification, sequencing, and data analysis) in a single machine."
+,"Illumina MiSeq,OBI:0002003","A DNA sequencer which is manufactured by the Illumina corporation. Built upon sequencing by synthesis technology, the machine provides an end-to-end solution (cluster generation, amplification, sequencing, and data analysis) in a single machine."
 ,"Illumina NovaSeq 6000,OBI:0002630","A DNA sequencer which is manufactured by the Illumina corporation, with two flow cells and an output of up to 6000 Gb (32-40 B reads per run). The sequencer utilizes synthesis technology and patterned flow cells to optimize throughput and even spacing of sequencing clusters"
 ,"Illumina NovaSeq X,OBI:0003663","A DNA sequencer with three flow cell types manufactured by Illumina. The NovaSeq X provides an output of up to 8 Tb (26-52 billion reads per run). The sequencer utilizes XLEAP-SBS chemistry, an advanced version of Illumina's sequencing by synthesis (SBS) technology, which enables faster and more accurate sequencing."
 ,"Illumina NovaSeq X Plus,OBI:0003664","A DNA sequencer with three flow cell types manufactured by Illumina. It features a dual-flow cell configuration, allowing to reach an output of up to 16 Tb (52-104 billion reads per run). The sequencer utilizes XLEAP-SBS chemistry, an advanced version of Illumina's sequencing by synthesis (SBS) technology, which enables faster and more accurate sequencing."
@@ -279,8 +273,8 @@ device,Ontology for BioMedical Investigations (OBI),https://www.ebi.ac.uk/ols4/o
 ,Illumina HiSeq X Five,"A DNA sequencer manufactured by Illumina corporation, which uses proven Illumina sequencing by synthesis (SBS) chemistry. It consists of 5 individual HiSeq X instruments, which together can sequence over 9000 genomes per year."
 ,"Illumina MiniSeq,OBI:0003114","A small benchtop DNA sequencer which is manufactured by the Illumina corporation with integrated cluster generation, sequencing and data analysis. The sequencer accommodates various flow cell configurations and can produce up to 25M single reads or 50M paired-end reads per run"
 ,Illumina iSeq 100,"A DNA sequencer manufactured by the Illumina corporation, with a minimum output of 1.2 Gb of data per run in 19 hours. It is ideal for small whole-genome sequencing (eg, bacteria, viruses, plasmids), targeted sequencing of a set of genes or gene regions, gene expression analysis, or 16S metagenomics. It allows greater statistical confidence for calling variants or low-frequency alleles."
-,"NextSeq 500,OBI:0002021","A DNA sequencer which is a desktop sequencer ideal for smaller-scale studies manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology"
-,"NextSeq 550,OBI:0003387","A DNA sequencer manufactured by the Illumina corporation, which provides the increased flexibility of microarray scanning in addition to sequencing."
+,"Illumina NextSeq 500,OBI:0002021","A DNA sequencer which is a desktop sequencer ideal for smaller-scale studies manufactured by the Illumina corporation. It supports sequencing of single, long or short insert paired end clone libraries relying on sequencing by synthesis technology"
+,"Illumina NextSeq 550,OBI:0003387","A DNA sequencer manufactured by the Illumina corporation, which provides the increased flexibility of microarray scanning in addition to sequencing."
 ,"Illumina NextSeq 1000,OBI:0003606",A DNA sequencer which is manufactured by the Illumina corporation using sequence-by-synthesis chemistry that fits on a benchtop and uses P1 and P2 flow cells.
 ,Illumina NextSeq 2000,"A DNA sequencer manufactured by the Illumina corporation, which uses advancements in optics, instrument design, and 2-channel chemistry to increase output. It uses larger P3 flow cell, in addition to P1 and P2 flow cells, and thus, has higer throughput relative to NextSeq 1000 system. It is a scalable platform that supports more complex, informative studies and a broad range of standard NGS methods, as well as emerging techniques, including spatialomics."
 ,"Oxford Nanopore GridION Mk1,OBI:0002751","A DNA sequencer that is manufactured by the Oxford Nanopore Technologies corporation, that can run and analyze up to five individual flow cells producing up to 150 Gb of data per run. The sequencer produces real-time results and utilizes nanopore technology with the option of running the flow cells concurrently or individually"
@@ -297,11 +291,13 @@ device,Ontology for BioMedical Investigations (OBI),https://www.ebi.ac.uk/ols4/o
 ,"flow cytometer analyzer,OBI:0400008","An analyser is a flow_cytometer that is used to measure properties of particles (whole cells, nuclei, chromosomes, diatoms, plankton, bacteria, viruses) by moving these particles through a detection chamber. An analyser is used to collect data for analysis"
 ,"tandem mass spectrometer,OBI:0001088",A mass spectrometer in which ions are subjected to two or more sequential stages of analysis (which may be separated spatially or temporally) according to the quotient mass/charge
 ,,
-,,
 host_taxon,NCBI Taxonomy,https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
 ,"Homo sapiens,NCBI:txid9606",NCBI Taxonomy term and id 
 ,"Mus musculus,NCBI:txid10090",NCBI Taxonomy term and id 
 ,,
+pregnancy_status,,Host pregnancy status
+,pregnant,
+,not pregnant,
 ,,
 host_body_site,Uber-Anatomy Ontology (UBERON),https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000467?lang=en
 ,"vagina,UBERON:0000996","A fibromuscular tubular tract leading from the uterus to the exterior of the body in female placental mammals and marsupials, or to the cloaca in female birds, monotremes, and some reptiles[WP]"
@@ -334,12 +330,31 @@ host_body_site,Uber-Anatomy Ontology (UBERON),https://www.ebi.ac.uk/ols4/ontolog
 ,"vaginal vein,UBERON:0001319","One the veins that drains the vaginal venous plexus, into the hypogastric veins. A venous plexus is a congregation of multiple veins."
 ,"vaginal venous plexus,UBERON:0001472","The vaginal plexuses are placed at the sides of the vagina; they communicate with the uterine, vesical, and hemorrhoidal plexuses, and are drained by the vaginal veins, one on either side, into the hypogastric veins. "
 ,,
-race,,"A social classification based primarily on physical characteristics such as skin color, facial features, or hair texture"
-,Black,
-,White,
+host_body_product,UBERON,https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000463
+,"cervical mucus,UBERON:0000316",A substance produced by the cervix and endocervical glands[BTO]. Thick acidic mucus that blocks the cervical os after mestruation[WP]. This 'infertile' mucus blocks spermatozoa from entering the uterus.
+,cervicovaginal mucus,"A complex fluid produced by the cervix and vagina, acting as a barrier against pathogens and playing a crucial role in reproductive health, including fertility and pregnancy"
+,"vaginal fluid,UBERON:0036243",Fluid that lines the vaginal walls that consists of multiple secretions that collect in the vagina from different glands.
+,"blood,UBERON:0000178",A fluid that is composed of blood plasma and erythrocytes.
+,"feces,UBERON:0001988",Portion of semisolid bodily waste discharged through the anus
+,"saliva,UBERON:0001836","A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions."
+,"urine,UBERON:0001088",Excretion that is the output of a kidney.
+,"milk,UBERON:0001913",An emulsion of fat globules within a fluid that is secreted by the mammary gland during lactation.
+,"tissue,UBERON:0000479","Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation."
+,,
+race,,"A social classification based primarily on physical characteristics such as skin color, facial features, or hair texture. Pick a term from the Controlled Vocabulary . Please contact us if you cannot find your term in this list. Or enter a null value term if information is not available."
 ,Asian,
-,Latino,
+,Black or African American,
+,American Indian/Alaska Native,
+,Native Hawaiian or Other Pacific Islander,
+,Middle Eastern or North African,
+,White,
+,Multi-racial,
+,Other,
+,,
+ethnicity,,"A category of people who identify with each other, usually on the basis of presumed similarities such as a common language, ancestry, history, society, culture, nation or social treatment within their residing area.   Pick a term from the Controlled Vocabulary or enter 'Not Available' if information not available."
+,Hispanic or Latino,
+,Not Hispanic or Latino,
 ,,
 null value,,Terms to be used for mandatory fields when the required information is missing or does not apply.
 ,Not Applicable,"For conditional mandatory fields, where conditions are not met"
-,Not Available,Information not available
+,Not Available,Information not available (unknown/missing)
