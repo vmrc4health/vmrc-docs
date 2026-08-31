@@ -17,7 +17,7 @@ Related Documentation:
 * [Downloading Data](portal_client_usage.md)
 
 
-## MIMAG/MIMARKS Metadata Templates (v2.1) and Supporting Files
+## MIMAG/MIMARKS Metadata Templates (v2.3) and Supporting Files
 
 Related Documentation:
 * [SOP - Metadata Standardization & Validation](VMRC2_GATES_SOP.pdf)
